@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from queue import PriorityQueue
 from datetime import datetime
 import pandas as pd
-
+import time
 
 # threshold for whether to add url to queue or not
 threshold = 10
@@ -46,9 +46,9 @@ class WebCrawler:
         soup = BeautifulSoup(html, 'html.parser')
         for link in soup.find_all('a'):
             path = link.get('href')
-            print("PATH", path)
+            # print("PATH", path)
             if path and path.startswith('/'):
-                print("filtered path", path)
+                # print("filtered path", path)
                 path = urljoin(url, path)
             yield path
 
@@ -77,16 +77,18 @@ class WebCrawler:
         # if we have not visited this url before, then we can crawl it for information
         if url not in self.visited_urls:
             # get the html of the url
+            self.visited_urls.append(url)
             html = self.get_url_info(url)
             # get_player_info_and_date
             player_count, date = self.get_player_info_and_date(html)
             weight = self.compute_url_weight(player_count, date)
             if weight < threshold: 
-                for url in self.get_hyperlinks(url, html):
-                    if url is not None and not url.startswith('#'):
+                for link in self.get_hyperlinks(url, html):
+                    if link is not None and not link.startswith('#'):
                         # print("weight, url", weight, url)
-                        self.add_url_to_prioqueue(weight, url)
-            self.visited_urls.append(url)
+                        self.add_url_to_prioqueue(weight, link)
+            
+            
 
 
     def compute_url_weight(self, player_count, date=None):
@@ -107,12 +109,17 @@ class WebCrawler:
         while not self.urls_queue.empty():
             url = self.get_url_from_prioqueue()
             self.log.info(f'Crawling: {url}')
+            print(f'Crawling: {url}')
+            print("Pre crawling link, this is our visited", self.visited_urls)
             try:
                 self.crawl_url(url)
                 self.log.info(f'Finished crawling: {url}')
-                print(self.visited_urls)
+                print(f'Finished crawling: {url}')
+                # print('visited', self.visited_urls)
             except Exception:
                 self.log.exception(f'Failed to crawl: {url}')
+            # finally:
+            #     self.visited_urls.append(url)
 
 
 if __name__ == '__main__':
