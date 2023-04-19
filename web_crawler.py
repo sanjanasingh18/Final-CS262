@@ -11,6 +11,7 @@ import time
 
 # threshold for whether to add url to queue or not
 threshold = 10
+acceptable_years = ['2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030']
 
 class WebCrawler:
 
@@ -118,8 +119,6 @@ class WebCrawler:
                 # print('visited', self.visited_urls)
             except Exception:
                 self.log.exception(f'Failed to crawl: {url}')
-            # finally:
-            #     self.visited_urls.append(url)
 
 
 if __name__ == '__main__':

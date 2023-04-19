@@ -39,6 +39,8 @@ class Crawler:
             logging.info(f'Crawling: {url}')
             try:
                 self.crawl(url)
+                print(f'Finished crawling: {url}')
+                print("visted urls", self.visited_urls)
             except Exception:
                 logging.exception(f'Failed to crawl: {url}')
             finally:
