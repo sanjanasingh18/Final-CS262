@@ -42,7 +42,9 @@ class WebCrawler:
         soup = BeautifulSoup(html, 'html.parser')
         for link in soup.find_all('a'):
             path = link.get('href')
+            print("PATH", path)
             if path and path.startswith('/'):
+                print("filtered path", path)
                 path = urljoin(url, path)
             yield path
 
@@ -77,7 +79,7 @@ class WebCrawler:
             weight = self.compute_url_weight(player_count, date)
             if weight < threshold: 
                 for url in self.get_hyperlinks(url, html):
-                    if url is not None:
+                    if url is not None and not url.startswith('#'):
                         # print("weight, url", weight, url)
                         self.add_url_to_prioqueue(weight, url)
             self.visited_urls.append(url)
@@ -104,12 +106,14 @@ class WebCrawler:
             try:
                 self.crawl_url(url)
                 self.log.info(f'Finished crawling: {url}')
+                print(self.visited_urls)
             except Exception:
                 self.log.exception(f'Failed to crawl: {url}')
 
 
 if __name__ == '__main__':
-    urls = ['https://www.wtatennis.com/', 'https://www.espn.com/tennis/']
+    # urls = ['https://www.wtatennis.com/', 'https://www.espn.com/tennis/']
+    urls = ['https://www.wtatennis.com/']
     crawler = WebCrawler()
     for url in urls:
         crawler.add_url_to_prioqueue(9, url)
