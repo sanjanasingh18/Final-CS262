@@ -26,6 +26,10 @@ class WebCrawler:
 
         player_popularity = {}
 
+        # initialize the count vector to be 0 for each player
+        for player in player_list:
+            player_popularity[player] = 0
+
         # create a logger file name and use that file to log crawling activities
         self.logname = "web_crawler_logs/WebCrawler" + "_" + str(datetime.now()) + ".txt"
         logging.basicConfig(
