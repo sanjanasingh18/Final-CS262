@@ -1,0 +1,670 @@
+2023-04-18:21:18:28,348, Starting web crawler...
+2023-04-18:21:18:28,348, Crawling: https://www.espn.com/tennis/
+2023-04-18:21:18:28,808, Finished crawling: https://www.espn.com/tennis/
+2023-04-18:21:18:28,809, Crawling: #
+2023-04-18:21:18:28,809, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:28,832, Crawling: #
+2023-04-18:21:18:28,834, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:28,839, Crawling: #
+2023-04-18:21:18:28,841, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:28,844, Crawling: #
+2023-04-18:21:18:28,845, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:28,850, Crawling: #
+2023-04-18:21:18:28,850, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:28,861, Crawling: #
+2023-04-18:21:18:28,862, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:28,870, Crawling: #
+2023-04-18:21:18:28,872, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:28,874, Crawling: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-04-18:21:18:29,049, Finished crawling: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-04-18:21:18:29,049, Crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:18:29,444, Finished crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:18:29,444, Crawling: #
+2023-04-18:21:18:29,444, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:29,445, Crawling: #
+2023-04-18:21:18:29,445, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:29,446, Crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:18:29,713, Finished crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:18:29,713, Crawling: #
+2023-04-18:21:18:29,714, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:29,714, Crawling: #
+2023-04-18:21:18:29,715, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:29,715, Crawling: http://www.espn.com/espn/mobile/products/products/_/id/17145860
+2023-04-18:21:18:29,884, Finished crawling: http://www.espn.com/espn/mobile/products/products/_/id/17145860
+2023-04-18:21:18:29,885, Crawling: #
+2023-04-18:21:18:29,885, Failed to crawl: #
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#': No scheme supplied. Perhaps you meant https://#?
+2023-04-18:21:18:29,886, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:31,438, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:31,438, Crawling: 
+2023-04-18:21:18:31,438, Failed to crawl: 
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2023-04-18:21:18:31,439, Crawling: #
+2023-04-18:21:18:31,439, Finished crawling: #
+2023-04-18:21:18:31,439, Crawling: #main-content
+2023-04-18:21:18:31,440, Failed to crawl: #main-content
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#main-content': No scheme supplied. Perhaps you meant https://#main-content?
+2023-04-18:21:18:31,440, Crawling: #menu-menu-1
+2023-04-18:21:18:31,441, Failed to crawl: #menu-menu-1
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#menu-menu-1': No scheme supplied. Perhaps you meant https://#menu-menu-1?
+2023-04-18:21:18:31,441, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:32,799, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:32,799, Crawling: 
+2023-04-18:21:18:32,800, Failed to crawl: 
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2023-04-18:21:18:32,800, Crawling: #main-content
+2023-04-18:21:18:32,800, Failed to crawl: #main-content
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#main-content': No scheme supplied. Perhaps you meant https://#main-content?
+2023-04-18:21:18:32,801, Crawling: #menu-menu-1
+2023-04-18:21:18:32,801, Failed to crawl: #menu-menu-1
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#menu-menu-1': No scheme supplied. Perhaps you meant https://#menu-menu-1?
+2023-04-18:21:18:32,802, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:34,101, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:34,101, Crawling: 
+2023-04-18:21:18:34,102, Failed to crawl: 
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2023-04-18:21:18:34,102, Crawling: #main-content
+2023-04-18:21:18:34,103, Failed to crawl: #main-content
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#main-content': No scheme supplied. Perhaps you meant https://#main-content?
+2023-04-18:21:18:34,103, Crawling: #menu-menu-1
+2023-04-18:21:18:34,104, Failed to crawl: #menu-menu-1
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#menu-menu-1': No scheme supplied. Perhaps you meant https://#menu-menu-1?
+2023-04-18:21:18:34,104, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:35,258, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:18:35,258, Crawling: 
+2023-04-18:21:18:35,258, Failed to crawl: 
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2023-04-18:21:18:35,259, Crawling: #main-content
+2023-04-18:21:18:35,259, Failed to crawl: #main-content
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#main-content': No scheme supplied. Perhaps you meant https://#main-content?
+2023-04-18:21:18:35,260, Crawling: #menu-menu-1
+2023-04-18:21:18:35,260, Failed to crawl: #menu-menu-1
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 105, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 74, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 98, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '#menu-menu-1': No scheme supplied. Perhaps you meant https://#menu-menu-1?
+2023-04-18:21:18:35,262, Crawling: http://disneyprivacycenter.com/

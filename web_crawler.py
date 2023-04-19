@@ -9,10 +9,6 @@ from datetime import datetime
 import pandas as pd
 
 
-logging.basicConfig(
-    format='%(asctime)s %(levelname)s:%(message)s',
-    level=logging.INFO)
-
 # threshold for whether to add url to queue or not
 threshold = 10
 
@@ -31,7 +27,7 @@ class WebCrawler:
         player_popularity = {}
 
         # create a logger file name and use that file to log crawling activities
-        self.logname = "WebCrawler" + "_" + str(datetime.now()) + ".txt"
+        self.logname = "web_crawler_logs/WebCrawler" + "_" + str(datetime.now()) + ".txt"
         logging.basicConfig(
             filename=self.logname,
             format='%(asctime)s,%(msecs)03d, %(message)s',
