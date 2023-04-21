@@ -1,0 +1,11 @@
+2023-04-21:10:03:13,518, Starting web crawler...
+2023-04-21:10:03:13,518, Crawling: https://www.wtatennis.com/
+2023-04-21:10:03:13,692, Failed to crawl: https://www.wtatennis.com/
+Traceback (most recent call last):
+  File "web_crawler.py", line 150, in run_crawler
+    self.crawl_url(url)
+  File "web_crawler.py", line 113, in crawl_url
+    player_count, date = self.get_player_info_and_date(html)
+  File "web_crawler.py", line 84, in get_player_info_and_date
+    if non_zero_arr:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()

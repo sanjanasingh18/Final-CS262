@@ -1,0 +1,26 @@
+2023-04-21:10:12:59,163, Starting web crawler...
+2023-04-21:10:12:59,163, Crawling: https://www.wtatennis.com/
+2023-04-21:10:12:59,453, Finished crawling: https://www.wtatennis.com/
+2023-04-21:10:12:59,454, Crawling: apps
+2023-04-21:10:12:59,454, Failed to crawl: apps
+Traceback (most recent call last):
+  File "web_crawler.py", line 148, in run_crawler
+    self.crawl_url(url)
+  File "web_crawler.py", line 111, in crawl_url
+    html = self.get_url_info(url)
+  File "web_crawler.py", line 139, in get_url_info
+    return requests.get(url).text
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 449, in prepare_request
+    p.prepare(
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "/opt/anaconda3/lib/python3.8/site-packages/requests/models.py", line 388, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'apps': No schema supplied. Perhaps you meant http://apps?
+2023-04-21:10:12:59,456, Crawling: http://instagram.com/wta

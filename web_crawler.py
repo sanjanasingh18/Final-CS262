@@ -6,8 +6,11 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from queue import PriorityQueue
 from datetime import datetime
+from collections import Counter
 import pandas as pd
 import time
+
+# TODO make self.player_popularity into a counter object not a dictionary
 
 # threshold for whether to add url to queue or not
 threshold = 10
@@ -71,17 +74,20 @@ class WebCrawler:
     def get_player_info_and_date(self, html):
         soup = BeautifulSoup(html, 'html.parser')
         html_text = soup.get_text().lower()
+        #print('orig', html_text)
         # compute the counts of each of the years
         year_counts = []
         for year in screening_years:
             year_counts.append(html_text.count(year))
         non_zero_arr = np.nonzero(year_counts)[0]
+        
         # if there is a year mentioned, compute the max year
         if non_zero_arr:
             # find the latest year where the count isn't 0
             max_year = screening_years[max(non_zero_arr)]
         else:
             max_year = 2010
+        #print('YEARCOUNTS', year_counts, max_year)
         # TODO add mutexes
 
         player_count = 0
@@ -96,7 +102,19 @@ class WebCrawler:
                 player_count += 1
 
         # return the count of the players mentioned and the maximum year mentioned
+        print('PLAYERCOUNT', player_count)
+        print('popularity dict', self.player_popularity)
         return player_count, int(max_year)
+
+    def find_most_popular_players(self):
+        # returns 1) the total # player mentions and 2) a dict of 5 popular players:counts
+        # TODO make this a counter to run this code
+        # assuming player_popularity is a counter for this function
+        # total_counts = sum(self.player_popularity.values())        
+        # here you assume A is a dict, but we should convert it to be a counter anyways
+        # return a dict of the 5 most popular players & a list of their counts 
+        # most_popular = dict(Counter(A).most_common(5))
+        # return total_counts, most_popular
 
     def crawl_url(self, url):
         # if we have not visited this url before, then we can crawl it for information
@@ -106,6 +124,7 @@ class WebCrawler:
             html = self.get_url_info(url)
             # get_player_info_and_date
             player_count, date = self.get_player_info_and_date(html)
+            print("player_count, date", player_count, date)
             weight = self.compute_url_weight(player_count, date)
             if weight < threshold:
                 for link in self.get_hyperlinks(url, html):
