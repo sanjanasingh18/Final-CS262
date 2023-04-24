@@ -16,11 +16,12 @@ import time
 threshold = 10
 screening_years = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018',
                     '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030']
-number_of_sites_crawled = 0
+
 
 class WebCrawler:
 
     def __init__(self):
+        self.number_of_sites_crawled = 0
         # a list to keep track of the urls that our crawler has visited
         self.visited_urls = []
         # a priority queue to hold the urls that our crawler needs to visit
@@ -82,7 +83,7 @@ class WebCrawler:
         non_zero_arr = np.nonzero(year_counts)[0]
         
         # if there is a year mentioned, compute the max year
-        if non_zero_arr:
+        if non_zero_arr != []:
             # find the latest year where the count isn't 0
             max_year = screening_years[max(non_zero_arr)]
         else:
@@ -102,8 +103,8 @@ class WebCrawler:
                 player_count += 1
 
         # return the count of the players mentioned and the maximum year mentioned
-        print('PLAYERCOUNT', player_count)
-        print('popularity dict', self.player_popularity)
+        # print('PLAYERCOUNT', player_count)
+        # print('popularity dict', self.player_popularity)
         return player_count, int(max_year)
 
     def find_most_popular_players(self):
@@ -115,18 +116,27 @@ class WebCrawler:
         # return a dict of the 5 most popular players & a list of their counts 
         # most_popular = dict(Counter(A).most_common(5))
         # return total_counts, most_popular
+        max_player_count = 0
+        max_player_name = ""
+        for player, count in self.player_popularity.items():
+            if count > max_player_count:
+                max_player_count = count
+                max_player_name = player
+
+        print("Most Popular Player is", max_player_name)
 
     def crawl_url(self, url):
         # if we have not visited this url before, then we can crawl it for information
         if url not in self.visited_urls:
-            number_of_sites_crawled += 1
-            print("Number of Sites Crawled:", number_of_sites_crawled)
+            self.number_of_sites_crawled += 1
+            print("Number of Sites Crawled:", self.number_of_sites_crawled)
             self.visited_urls.append(url)
             html = self.get_url_info(url)
             # get_player_info_and_date
             player_count, date = self.get_player_info_and_date(html)
             print("player_count, date", player_count, date)
             weight = self.compute_url_weight(player_count, date)
+            self.find_most_popular_players()
             if weight < threshold:
                 for link in self.get_hyperlinks(url, html):
                     if link is not None and not link.startswith('#'):
