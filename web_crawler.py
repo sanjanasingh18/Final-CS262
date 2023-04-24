@@ -16,7 +16,7 @@ import time
 threshold = 10
 screening_years = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018',
                     '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030']
-
+number_of_sites_crawled = 0
 
 class WebCrawler:
 
@@ -119,7 +119,8 @@ class WebCrawler:
     def crawl_url(self, url):
         # if we have not visited this url before, then we can crawl it for information
         if url not in self.visited_urls:
-            # get the html of the url
+            number_of_sites_crawled += 1
+            print("Number of Sites Crawled:", number_of_sites_crawled)
             self.visited_urls.append(url)
             html = self.get_url_info(url)
             # get_player_info_and_date
@@ -155,12 +156,12 @@ class WebCrawler:
         while not self.urls_queue.empty():
             url = self.get_url_from_prioqueue()
             self.log.info(f'Crawling: {url}')
-            print(f'Crawling: {url}')
-            print("Pre crawling link, this is our visited", self.visited_urls)
+            # print(f'Crawling: {url}')
+            # print("Pre crawling link, this is our visited", self.visited_urls)
             try:
                 self.crawl_url(url)
                 self.log.info(f'Finished crawling: {url}')
-                print(f'Finished crawling: {url}')
+                # print(f'Finished crawling: {url}')
                 # print('visited', self.visited_urls)
             except Exception:
                 self.log.exception(f'Failed to crawl: {url}')
