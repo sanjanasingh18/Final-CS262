@@ -31,11 +31,13 @@ class WebCrawler:
         data = pd.read_csv('player_names.txt', delimiter="\t", header=0).values
         self.player_list = np.reshape(data, -1)
 
-        self.player_popularity = {}
+        # initialize Counter to have items for each player
+        self.player_popularity = Counter(self.player_list)
+        # self.player_popularity = {}
 
-        # initialize the count vector to be 0 for each player
-        for player in self.player_list:
-            self.player_popularity[player] = 0
+        # # initialize the count vector to be 0 for each player
+        # for player in self.player_list:
+        #     self.player_popularity[player] = 0
 
         # create a logger file name and use that file to log crawling activities
         self.logname = "web_crawler_logs/WebCrawler" + \
@@ -83,7 +85,7 @@ class WebCrawler:
         non_zero_arr = np.nonzero(year_counts)[0]
         
         # if there is a year mentioned, compute the max year
-        if non_zero_arr != []:
+        if non_zero_arr.size > 0:
             # find the latest year where the count isn't 0
             max_year = screening_years[max(non_zero_arr)]
         else:
@@ -95,12 +97,19 @@ class WebCrawler:
         
         # for each of the top 50 players that we want to search for
         # read the text file to find the latest year mentioned and the players
+        player_count_on_site = {}
         for player in self.player_list:
             count_from_cur_site = html_text.count(player)
-            cur_count = self.player_popularity[player]
-            self.player_popularity[player] = count_from_cur_site + cur_count
             if count_from_cur_site > 0:
+                # add the count to the dict
+                # at the end, update the count
+                player_count_on_site[player] = count_from_cur_site
                 player_count += 1
+            # cur_count = self.player_popularity[player]
+            # self.player_popularity[player] = count_from_cur_site + cur_count
+            # if count_from_cur_site > 0:
+            #     player_count += 1
+        self.player_popularity.update(player_count_on_site)
 
         # return the count of the players mentioned and the maximum year mentioned
         # print('PLAYERCOUNT', player_count)
