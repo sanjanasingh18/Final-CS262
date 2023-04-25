@@ -1,0 +1,233 @@
+2023-04-18:21:37:04,594, Starting web crawler...
+2023-04-18:21:37:04,595, Crawling: https://www.wtatennis.com/
+2023-04-18:21:37:04,978, Finished crawling: https://www.wtatennis.com/
+2023-04-18:21:37:04,978, Crawling: apps
+2023-04-18:21:37:04,979, Finished crawling: apps
+2023-04-18:21:37:04,979, Crawling: http://instagram.com/wta
+2023-04-18:21:37:06,080, Finished crawling: http://instagram.com/wta
+2023-04-18:21:37:06,080, Crawling: http://www.usopenseries.com/home/default.sps
+2023-04-18:21:37:07,193, Finished crawling: http://www.usopenseries.com/home/default.sps
+2023-04-18:21:37:07,193, Crawling: http://t.email.usopen.org/lp/ustaProAcq
+2023-04-18:21:37:07,786, Finished crawling: http://t.email.usopen.org/lp/ustaProAcq
+2023-04-18:21:37:07,786, Crawling: http://t.email.usopen.org/lp/ustaProAcq
+2023-04-18:21:37:08,194, Finished crawling: http://t.email.usopen.org/lp/ustaProAcq
+2023-04-18:21:37:08,194, Crawling: http://www.atpworldtour.com/
+2023-04-18:21:37:08,690, Finished crawling: http://www.atpworldtour.com/
+2023-04-18:21:37:08,691, Crawling: http://
+2023-04-18:21:37:08,691, Failed to crawl: http://
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 107, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 76, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 100, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 445, in prepare_url
+    raise InvalidURL(f"Invalid URL {url!r}: No host supplied")
+requests.exceptions.InvalidURL: Invalid URL 'http://': No host supplied
+2023-04-18:21:37:08,693, Crawling: http://
+2023-04-18:21:37:08,693, Failed to crawl: http://
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 107, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 76, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 100, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 445, in prepare_url
+    raise InvalidURL(f"Invalid URL {url!r}: No host supplied")
+requests.exceptions.InvalidURL: Invalid URL 'http://': No host supplied
+2023-04-18:21:37:08,694, Crawling: http://
+2023-04-18:21:37:08,694, Failed to crawl: http://
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 107, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 76, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 100, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 445, in prepare_url
+    raise InvalidURL(f"Invalid URL {url!r}: No host supplied")
+requests.exceptions.InvalidURL: Invalid URL 'http://': No host supplied
+2023-04-18:21:37:08,695, Crawling: http://barcelonaopenbancsabadell.com
+2023-04-18:21:37:10,367, Finished crawling: http://barcelonaopenbancsabadell.com
+2023-04-18:21:37:10,367, Crawling: http://barcelonaopenbancsabadell.com/aviso-legal
+2023-04-18:21:37:10,367, Finished crawling: http://barcelonaopenbancsabadell.com/aviso-legal
+2023-04-18:21:37:10,367, Crawling: http://barcelonaopenbancsabadell.com/hospitality
+2023-04-18:21:37:11,871, Finished crawling: http://barcelonaopenbancsabadell.com/hospitality
+2023-04-18:21:37:11,871, Crawling: http://barcelonaopenbancsabadell.com/noticias
+2023-04-18:21:37:15,452, Finished crawling: http://barcelonaopenbancsabadell.com/noticias
+2023-04-18:21:37:15,452, Crawling: http://barcelonaopenbancsabadell.com/tickets
+2023-04-18:21:37:16,876, Finished crawling: http://barcelonaopenbancsabadell.com/tickets
+2023-04-18:21:37:16,876, Crawling: http://https://www.tennisclubroseto.it/atp.html
+2023-04-18:21:37:16,896, Failed to crawl: http://https://www.tennisclubroseto.it/atp.html
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/Cellar/python@3.11/3.11.2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/Cellar/python@3.11/3.11.2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.11/3.11.2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/Cellar/python@3.11/3.11.2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python@3.11/3.11.2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x11a121a10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='https', port=80): Max retries exceeded with url: //www.tennisclubroseto.it/atp.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11a121a10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 107, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 76, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 100, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='https', port=80): Max retries exceeded with url: //www.tennisclubroseto.it/atp.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x11a121a10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-04-18:21:37:16,909, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:18,691, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:18,691, Crawling: http://oeirasopen.pt/comochegar
+2023-04-18:21:37:19,516, Finished crawling: http://oeirasopen.pt/comochegar
+2023-04-18:21:37:19,516, Crawling: http://oeirasopen.pt/comochegar
+2023-04-18:21:37:19,516, Finished crawling: http://oeirasopen.pt/comochegar
+2023-04-18:21:37:19,516, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:20,637, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:20,637, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:23,886, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:23,886, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:26,118, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:26,118, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:27,518, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:27,518, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:28,979, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:28,979, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:30,198, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:30,198, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:32,113, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:32,113, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:33,252, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:33,252, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:34,360, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:34,360, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:35,645, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:35,645, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:37,328, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:37,328, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:38,341, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:38,341, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:40,753, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:40,753, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:42,815, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:42,815, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:49,570, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:49,570, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:52,082, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:52,082, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:53,420, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:53,420, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:57,122, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:57,123, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:58,691, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:37:58,691, Crawling: http://oeirasopen.pt/home
+2023-04-18:21:38:01,414, Finished crawling: http://oeirasopen.pt/home
+2023-04-18:21:38:01,414, Crawling: http://oeirasopen.pt/home

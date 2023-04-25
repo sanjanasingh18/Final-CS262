@@ -1,0 +1,61 @@
+2023-04-18:22:43:55,169, Starting web crawler...
+2023-04-18:22:43:55,170, Crawling: https://www.wtatennis.com/
+2023-04-18:22:43:55,612, Finished crawling: https://www.wtatennis.com/
+2023-04-18:22:43:55,612, Crawling: apps
+2023-04-18:22:43:55,612, Failed to crawl: apps
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 142, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 106, in crawl_url
+    html = self.get_url_info(url)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 133, in get_url_info
+    return requests.get(url).text
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.11/site-packages/requests/models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'apps': No scheme supplied. Perhaps you meant https://apps?
+2023-04-18:22:43:55,620, Crawling: http://instagram.com/wta
+2023-04-18:22:43:56,857, Finished crawling: http://instagram.com/wta
+2023-04-18:22:43:56,858, Crawling: http://www.usopenseries.com/home/default.sps
+2023-04-18:22:43:57,800, Failed to crawl: http://www.usopenseries.com/home/default.sps
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 142, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in crawl_url
+    player_count, date = self.get_player_info_and_date(html)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 80, in get_player_info_and_date
+    if non_zero_arr:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2023-04-18:22:43:57,800, Crawling: http://www.youtube.com/user/wta
+2023-04-18:22:43:58,496, Finished crawling: http://www.youtube.com/user/wta
+2023-04-18:22:43:58,496, Crawling: https://join.whoop.com/WTA/=_blank
+2023-04-18:22:43:58,832, Finished crawling: https://join.whoop.com/WTA/=_blank
+2023-04-18:22:43:58,833, Crawling: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
+2023-04-18:22:43:59,272, Failed to crawl: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 142, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in crawl_url
+    player_count, date = self.get_player_info_and_date(html)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 80, in get_player_info_and_date
+    if non_zero_arr:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2023-04-18:22:43:59,273, Crawling: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
+2023-04-18:22:43:59,273, Finished crawling: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
+2023-04-18:22:43:59,273, Crawling: https://podcasts.apple.com/us/podcast/wta-insider-podcast/id1052842829

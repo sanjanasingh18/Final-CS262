@@ -1,0 +1,204 @@
+2023-04-18:21:32:08,570, Starting web crawler...
+2023-04-18:21:32:08,571, Crawling: https://www.espn.com/tennis/
+2023-04-18:21:32:08,949, Failed to crawl: https://www.espn.com/tennis/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:08,950, Crawling: http://www.espn.com/watch/espnplus/
+2023-04-18:21:32:09,996, Finished crawling: http://www.espn.com/watch/espnplus/
+2023-04-18:21:32:09,997, Crawling: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-04-18:21:32:10,244, Finished crawling: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-04-18:21:32:10,244, Crawling: http://www.espn.com
+2023-04-18:21:32:10,912, Failed to crawl: http://www.espn.com
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:10,912, Crawling: http://www.espn.com
+2023-04-18:21:32:11,429, Failed to crawl: http://www.espn.com
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:11,430, Crawling: http://www.espn.com/
+2023-04-18:21:32:12,001, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:12,002, Crawling: http://www.espn.com/
+2023-04-18:21:32:12,453, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:12,454, Crawling: http://www.espn.com/
+2023-04-18:21:32:13,134, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:13,135, Crawling: http://www.espn.com/
+2023-04-18:21:32:13,590, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:13,591, Crawling: http://www.espn.com/
+2023-04-18:21:32:14,068, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:14,069, Crawling: http://www.espn.com/
+2023-04-18:21:32:14,592, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:14,592, Crawling: http://www.espn.com/
+2023-04-18:21:32:15,176, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:15,177, Crawling: http://www.espn.com/
+2023-04-18:21:32:15,471, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:15,472, Crawling: http://www.espn.com/
+2023-04-18:21:32:16,129, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:16,130, Crawling: http://www.espn.com/
+2023-04-18:21:32:16,474, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:16,474, Crawling: http://www.espn.com/
+2023-04-18:21:32:16,769, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:16,769, Crawling: http://www.espn.com/
+2023-04-18:21:32:17,323, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:17,324, Crawling: http://www.espn.com/
+2023-04-18:21:32:17,797, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:17,798, Crawling: http://www.espn.com/
+2023-04-18:21:32:18,429, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:18,429, Crawling: http://www.espn.com/
+2023-04-18:21:32:18,825, Failed to crawl: http://www.espn.com/
+Traceback (most recent call last):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 108, in run_crawler
+    self.crawl_url(url)
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 82, in crawl_url
+    for url in self.get_hyperlinks(url, html):
+  File "/Users/sophiaho/CS262/Final-CS262/web_crawler.py", line 48, in get_hyperlinks
+    if not path.startswith('#'):
+           ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+2023-04-18:21:32:18,826, Crawling: http://www.espn.com/

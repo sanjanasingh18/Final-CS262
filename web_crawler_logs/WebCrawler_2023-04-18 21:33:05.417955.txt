@@ -1,0 +1,32 @@
+2023-04-18:21:33:05,418, Starting web crawler...
+2023-04-18:21:33:05,418, Crawling: https://www.espn.com/tennis/
+2023-04-18:21:33:05,609, Finished crawling: https://www.espn.com/tennis/
+2023-04-18:21:33:05,609, Crawling: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-04-18:21:33:05,719, Finished crawling: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-04-18:21:33:05,719, Crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:33:05,921, Finished crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:33:05,921, Crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:33:06,052, Finished crawling: http://www.espn.com/espn/apps/download?app=espn
+2023-04-18:21:33:06,052, Crawling: http://www.espn.com/espn/mobile/products/products/_/id/17145860
+2023-04-18:21:33:06,364, Finished crawling: http://www.espn.com/espn/mobile/products/products/_/id/17145860
+2023-04-18:21:33:06,364, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:08,544, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:08,544, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:09,853, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:09,853, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:11,386, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:11,387, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:12,825, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:12,825, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:14,182, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:14,182, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:15,483, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:15,483, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:16,687, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:16,688, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:18,047, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:18,047, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:19,271, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:19,271, Crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:20,509, Finished crawling: http://disneyprivacycenter.com/
+2023-04-18:21:33:20,509, Crawling: http://disneyprivacycenter.com/
