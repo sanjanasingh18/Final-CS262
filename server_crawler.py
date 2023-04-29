@@ -12,14 +12,17 @@ import re
 
 import threading
 
-mutex_unsent_messages = threading.Lock()
-mutex_accounts = threading.Lock()
-mutex_active_accounts = threading.Lock()
-
 
 class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
     # initialize the server for our  distributed web crawler
     def __init__(self):
+        # Mutex lock so only one thread can access each of these data structures at a given time
+        # Need this to be a Recursive mutex as some subfunctions call on lock on 
+        # top of a locked function
+        visited_urls_lock = threading.RLock()
+        urls_queue_lock = threading.RLock()
+        player_popularity_lock = threading.RLock()
+
         # create a variable to store the total number of sites we have crawled
         self.number_of_sites_crawled = 0
         # a list to keep track of the urls that our crawler has visited
@@ -53,6 +56,26 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         self.log.info('Starting web crawler...')
 
     def process_hyperlinks(self, request, context):
+        # create variables for the values we receive from the client
+        scraped_url_weight = request.weight
+        player_frequencies_on_url = request.players_freq
+        new_urls = request.hyperlinks
+
+        # check if the weight of the scraped URLs meets the threshold weight
+        if scraped_url_weight < 1000:
+            # add the new hyperlinks to the PriorityQueue according to the weight
+            for url in new_urls:
+                self.urls_queue.put(scraped_url_weight, url)
+
+        # use the player frequency counts from the scraped URL to update our 
+        # player popularity Counter
+        self.player_popularity.update(player_frequencies_on_url)
+
+        # get the next highest priority URL from the queue to be scraped
+        next_url = self.urls_queue.get()
+
+        # return the next URL for the client to scrape
+        return next_url
 
         
 # create a class for starting our Crawler server instance
@@ -63,16 +86,12 @@ class ServerRunner:
         self.host = HOST
         self.port = PORT
 
-        # TODO change this code from here through the kill function
-
-        self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-        self.chat_servicer = ChatServicer()
-
     # a function to start the server
-    def start(self):
-        new_route_guide_pb2_grpc.add_ChatServicer_to_server(
-            self.chat_servicer, self.server)
-        self.server.add_insecure_port(f"[::]:{self.port}")
+    def run(self):
+        self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+        scrape_pb2_grpc.add_CrawlServicer_to_server(
+            CrawlerServer(), self.server)
+        self.server.add_insecure_port('[::]:' + self.port)
         self.server.start()
         self.server.wait_for_termination()
 
@@ -83,4 +102,4 @@ class ServerRunner:
 
 if __name__ == '__main__':
     server = ServerRunner()
-    server.start()
+    server.run()

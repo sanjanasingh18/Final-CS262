@@ -153,8 +153,8 @@ class WebCrawler:
                         self.add_url_to_prioqueue(weight, link)
 
     def compute_url_weight(self, player_count, date):
-        # TODO add logic for computing the url weight
-        if int(date) < 2020 or player_count == 0:
+        # the logic for computing the url weight
+        if int(date) < 2018 or player_count == 0:
             # if the URL is outdated, return 10000 so it is never 
             # added to the queue as this will be filtered later
             return 10000
