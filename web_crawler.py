@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 from queue import PriorityQueue
 from datetime import datetime
 from collections import Counter
-import pandas as pd
 import time
 
 # TODO make self.player_popularity into a counter object not a dictionary
@@ -52,69 +51,69 @@ class WebCrawler:
 
         self.log.info('Starting web crawler...')
 
-    def get_hyperlinks(self, url, html):
-        soup = BeautifulSoup(html, 'html.parser')
-        for link in soup.find_all('a'):
-            path = link.get('href')
-            # print("PATH", path)
-            if path and path.startswith('/'):
-                # print("filtered path", path)
-                path = urljoin(url, path)
-            yield path
+    # def get_hyperlinks(self, url, html):
+    #     soup = BeautifulSoup(html, 'html.parser')
+    #     for link in soup.find_all('a'):
+    #         path = link.get('href')
+    #         # print("PATH", path)
+    #         if path and path.startswith('/'):
+    #             # print("filtered path", path)
+    #             path = urljoin(url, path)
+    #         yield path
 
-    def add_url_to_prioqueue(self, weight, url):
-        # logic will be that the weight for each child link will
-        # be determined by the number of tennis players the parent
-        # site mentions and the date the site was published if available
-        # the weight will be calculated by the formula:
-        # {~- number of names mentioned} + {2023 - latest year mentioned}
-        # if the url has not ben visited before add it to the prioqueue
-        # print("curr url queue", self.urls_queue.queue)
-        if url not in self.visited_urls:
-            self.urls_queue.put((weight, url))
-        # print("new curr url queue", self.urls_queue.queue)
+    # def add_url_to_prioqueue(self, weight, url):
+    #     # logic will be that the weight for each child link will
+    #     # be determined by the number of tennis players the parent
+    #     # site mentions and the date the site was published if available
+    #     # the weight will be calculated by the formula:
+    #     # {~- number of names mentioned} + {2023 - latest year mentioned}
+    #     # if the url has not ben visited before add it to the prioqueue
+    #     # print("curr url queue", self.urls_queue.queue)
+    #     if url not in self.visited_urls:
+    #         self.urls_queue.put((weight, url))
+    #     # print("new curr url queue", self.urls_queue.queue)
 
-    def get_player_info_and_date(self, html):
-        soup = BeautifulSoup(html, 'html.parser')
-        html_text = soup.get_text().lower()
-        #print('orig', html_text)
-        # compute the counts of each of the years
-        year_counts = []
-        for year in screening_years:
-            year_counts.append(html_text.count(year))
-        non_zero_arr = np.nonzero(year_counts)[0]
+    # def get_player_info_and_date(self, html):
+    #     soup = BeautifulSoup(html, 'html.parser')
+    #     html_text = soup.get_text().lower()
+    #     #print('orig', html_text)
+    #     # compute the counts of each of the years
+    #     year_counts = []
+    #     for year in screening_years:
+    #         year_counts.append(html_text.count(year))
+    #     non_zero_arr = np.nonzero(year_counts)[0]
         
-        # if there is a year mentioned, compute the max year
-        if non_zero_arr.size > 0:
-            # find the latest year where the count isn't 0
-            max_year = screening_years[max(non_zero_arr)]
-        else:
-            max_year = 2010
-        #print('YEARCOUNTS', year_counts, max_year)
-        # TODO add mutexes
+    #     # if there is a year mentioned, compute the max year
+    #     if non_zero_arr.size > 0:
+    #         # find the latest year where the count isn't 0
+    #         max_year = screening_years[max(non_zero_arr)]
+    #     else:
+    #         max_year = 2010
+    #     #print('YEARCOUNTS', year_counts, max_year)
+    #     # TODO add mutexes
 
-        player_count = 0
+    #     player_count = 0
         
-        # for each of the top 50 players that we want to search for
-        # read the text file to find the latest year mentioned and the players
-        player_count_on_site = {}
-        for player in self.player_list:
-            count_from_cur_site = html_text.count(player)
-            if count_from_cur_site > 0:
-                # add the count to the dict
-                # at the end, update the count
-                player_count_on_site[player] = count_from_cur_site
-                player_count += 1
-            # cur_count = self.player_popularity[player]
-            # self.player_popularity[player] = count_from_cur_site + cur_count
-            # if count_from_cur_site > 0:
-            #     player_count += 1
-        self.player_popularity.update(player_count_on_site)
+    #     # for each of the top 50 players that we want to search for
+    #     # read the text file to find the latest year mentioned and the players
+    #     player_count_on_site = {}
+    #     for player in self.player_list:
+    #         count_from_cur_site = html_text.count(player)
+    #         if count_from_cur_site > 0:
+    #             # add the count to the dict
+    #             # at the end, update the count
+    #             player_count_on_site[player] = count_from_cur_site
+    #             player_count += 1
+    #         # cur_count = self.player_popularity[player]
+    #         # self.player_popularity[player] = count_from_cur_site + cur_count
+    #         # if count_from_cur_site > 0:
+    #         #     player_count += 1
+    #     self.player_popularity.update(player_count_on_site)
 
-        # return the count of the players mentioned and the maximum year mentioned
-        # print('PLAYERCOUNT', player_count)
-        # print('popularity dict', self.player_popularity)
-        return player_count, int(max_year)
+    #     # return the count of the players mentioned and the maximum year mentioned
+    #     # print('PLAYERCOUNT', player_count)
+    #     # print('popularity dict', self.player_popularity)
+    #     return player_count, int(max_year)
 
     def find_most_popular_players(self):
         # returns 1) the total # player mentions and 2) a dict of 5 popular players:counts
