@@ -76,46 +76,79 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             self.urls_queue.put((weight, url))
 
     def process_hyperlinks(self, request, context):
+        # create a variable for the next url to scrape
+        next_url = PRIORITY_QUEUE_EMPTY
+
         # create variables for the values we receive from the client
         scraped_url_weight = request.weight
-        player_frequencies_on_url = request.players_freq
-        new_urls = request.hyperlinks
-
-        self.log.info('Finished crawling a site with %s distinct players mentioned and %s hyperlinks.', len(
-            player_frequencies_on_url), len(new_urls))
 
         # lock the urls queue mutex
         self.urls_queue_lock.acquire()
-        # check if the weight of the scraped URLs meets the threshold weight
-        if scraped_url_weight < 1000:
-            # add the new hyperlinks to the PriorityQueue according to the weight
-            for url in new_urls:
-                self.add_url_to_prioqueue(scraped_url_weight, url)
+        
+        # if this is not an intialization request on the client's
+        # behalf, process the client data
+        if scraped_url_weight != CLIENT_BYPASS:
+            player_frequencies_on_url = request.players_freq
+            new_urls = request.hyperlinks
 
-        # get the next highest priority URL from the queue to be scraped
-        next_url = self.urls_queue.get()
+            # lock the player popularity mutex
+            self.player_popularity_lock.acquire()
+            # use the player frequency counts from the scraped URL to update our
+            # player popularity Counter
+            self.player_popularity.update(player_frequencies_on_url)
+            # release mutex
+            self.player_popularity_lock.release()
+
+            self.log.info('Finished crawling a site with %s distinct players mentioned and %s hyperlinks.', len(
+                player_frequencies_on_url), len(new_urls))
+
+            # check if the weight of the scraped URLs meets the threshold weight
+            if scraped_url_weight < 1000:
+                # add the new hyperlinks to the PriorityQueue according to the weight
+                for url in new_urls:
+                    self.add_url_to_prioqueue(scraped_url_weight, url)
+
+        if not self.urls_queue.empty():
+            # get the next highest priority URL from the queue to be scraped
+            next_url = self.urls_queue.get()
+
+            self.log.info('Crawling next site: %s', next_url)
+
+            # lock the visited urls mutex
+            self.visited_urls_lock.release()
+            # add the next url that will be scraped to the visited URLs list
+            self.visited_urls.append(next_url)
+            # release mutex
+            self.visited_urls_lock.release()
+        
         # release mutex
         self.urls_queue_lock.release()
 
-        self.log.info('Crawling next site: %s', next_url)
-
-        # lock the visited urls mutex
-        self.visited_urls_lock.release()
-        # add the next url that will be scraped to the visited URLs list
-        self.visited_urls.append(next_url)
-        # release mutex
-        self.visited_urls_lock.release()
-
-        # lock the player popularity mutex
-        self.player_popularity_lock.acquire()
-        # use the player frequency counts from the scraped URL to update our
-        # player popularity Counter
-        self.player_popularity.update(player_frequencies_on_url)
-        # release mutex
-        self.player_popularity_lock.release()
-
         # return the next URL for the client to scrape
         return next_url
+
+    def find_most_popular_players(self):
+        # returns 1) the total # player mentions and 2) a dict of 5 popular players:count
+        # assuming player_popularity is a counter for this function
+        # total_counts = sum(self.player_popularity.values())
+        # here you assume A is a dict, but we should convert it to be a counter anyways
+        # return a dict of the 5 most popular players & a list of their counts
+        # most_popular = dict(Counter(A).most_common(5))
+        # return total_counts, most_popular
+        total_mention_count = sum(self.player_popularity.values())
+        max_player_count = 0
+        max_player_name = ""
+        for player, count in self.player_popularity.items():
+
+            if count > max_player_count:
+                max_player_count = count
+                max_player_name = player
+
+        print("Most Popular Player is", max_player_name)
+        five_most_common_players = self.player_popularity.most_common(5)
+        for player, count in five_most_common_players:
+            print(player + " was mentioned " + str(count) + " times. They comprise " +
+                  str(count/total_mention_count) + "% of total mentions.")
 
 
 # create a class for starting our Crawler server instance
@@ -128,15 +161,17 @@ class ServerRunner:
 
     # a function to start the server
     def run(self):
+        self.server_crawler = CrawlerServer()
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         scrape_pb2_grpc.add_CrawlServicer_to_server(
-            CrawlerServer(), self.server)
+            self.server_crawler, self.server)
         self.server.add_insecure_port('[::]:' + self.port)
         self.server.start()
         self.server.wait_for_termination()
 
     # a function to kill the server instance
     def kill(self):
+        self.server_crawler.find_most_popular_players()
         self.server.stop(grace=None)
         # self.thread_pool.shutdown(wait=False)
 
