@@ -1,0 +1,6 @@
+2023-05-03:15:04:59,726, Starting web crawler server...
+2023-05-03:15:05:05,173, Exception serializing message!
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/grpc/_common.py", line 90, in _transform
+    return transformer(message)
+TypeError: descriptor 'SerializeToString' for 'google.protobuf.pyext._message.CMessage' objects doesn't apply to a 'str' object
