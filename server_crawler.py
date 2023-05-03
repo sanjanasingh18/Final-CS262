@@ -165,8 +165,9 @@ class ServerRunner:
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         scrape_pb2_grpc.add_CrawlServicer_to_server(
             self.server_crawler, self.server)
-        self.server.add_insecure_port('[::]:' + self.port)
+        self.server.add_insecure_port('[::]:' + str(self.port))
         self.server.start()
+        print("Crawler server is running.")
         self.server.wait_for_termination()
 
     # a function to kill the server instance

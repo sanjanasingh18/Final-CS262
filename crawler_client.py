@@ -109,7 +109,13 @@ class CrawlerClient:
         # want to send to server that you have joined so you receive
         # a URL to scrape
         # populate request data object
-        request = scrape.Data(weight=CLIENT_BYPASS)
+        players_freq_var = {1: "one", 2: "two", 3: "three"}
+        hyperlinks_var = []
+        request = scrape.Data()
+        request.weight = CLIENT_BYPASS
+        # request.players_freq = players_freq_var
+        # request.hyperlinks = hyperlinks_var
+
         next_url = self.connection.process_hyperlinks(request)
 
         while True:
@@ -119,13 +125,15 @@ class CrawlerClient:
                 next_url = self.connection.process_hyperlinks(request)
 
             next_html = self.get_url_info(next_url)
-            player_count_on_site, player_count, max_year = self.get_player_info_and_date(next_url)
+            player_count_on_site, player_count, max_year = self.get_player_info_and_date(
+                next_url)
 
             weight = self.compute_url_weight(player_count, max_year)
 
             new_hyperlinks = self.get_hyperlinks(next_url, next_html)
 
-            request = scrape.Data(weight=weight, players_freq=player_count_on_site, hyperlinks=new_hyperlinks)
+            request = scrape.Data(
+                weight=weight, players_freq=player_count_on_site, hyperlinks=new_hyperlinks)
             next_url = self.connection.process_hyperlinks(request)
 
         return "TODO"

@@ -1,8 +1,8 @@
 # Set our PORT variable
 PORT = 8888
 
-# change the HOST variable according to the get the host name of the server
-HOST = ""
+# change the HOST variable according to the hostname of your computer
+HOST = "dhcp-10-250-168-147.harvard.edu"
 ADDRESS = (HOST, PORT)
 
 # constant weight variable for client initialization
