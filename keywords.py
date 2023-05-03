@@ -2,8 +2,8 @@
 PORT = 8888
 
 # change the HOST variable according to the hostname of your computer
-HOST = "dhcp-10-250-239-247.harvard.edu" # sanj
-# HOST = "dhcp-10-250-168-147.harvard.edu" # soph
+# HOST = "dhcp-10-250-239-247.harvard.edu" # sanj
+HOST = "dhcp-10-250-168-147.harvard.edu" # soph
 ADDRESS = (HOST, PORT)
 
 # constant weight variable for client initialization

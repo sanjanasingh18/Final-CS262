@@ -109,20 +109,27 @@ class CrawlerClient:
         # want to send to server that you have joined so you receive
         # a URL to scrape
         # populate request data object
-        players_freq_var = {1: "one", 2: "two", 3: "three"}
-        hyperlinks_var = []
+        players_freq_var = scrape.Dictionary()
+        # entry = scrape.Pair()
+        # entry.key = "1"
+        # entry.value = "one"
+        # players_freq_var.extend(entry)
+
+        hyperlinks_var = scrape.List()
         request = scrape.Data()
         request.weight = CLIENT_BYPASS
-        # request.players_freq = players_freq_var
-        # request.hyperlinks = hyperlinks_var
+        # request.players_freq.CopyFrom(players_freq_var)
+        # request.hyperlinks.CopyFrom(hyperlinks_var)
 
-        next_url = self.connection.process_hyperlinks(request)
+        next_url = self.connection.process_hyperlinks(request).message
+        print("NEW URL", next_url)
 
         while True:
             while next_url == PRIORITY_QUEUE_EMPTY:
                 # populate request data object
                 request = scrape.Data(weight=CLIENT_BYPASS)
-                next_url = self.connection.process_hyperlinks(request)
+                next_url = self.connection.process_hyperlinks(request).message
+                print("NEXTTTT URL", next_url)
 
             next_html = self.get_url_info(next_url)
             player_count_on_site, player_count, max_year = self.get_player_info_and_date(
@@ -133,8 +140,11 @@ class CrawlerClient:
             new_hyperlinks = self.get_hyperlinks(next_url, next_html)
 
             request = scrape.Data(
-                weight=weight, players_freq=player_count_on_site, hyperlinks=new_hyperlinks)
-            next_url = self.connection.process_hyperlinks(request)
+                weight=weight, 
+                players_freq=player_count_on_site, 
+                hyperlinks=new_hyperlinks)
+            
+            next_url = self.connection.process_hyperlinks(request).message
 
         return "TODO"
     # TODO add a while that continuously calls on the process_hyperlinks function from the server

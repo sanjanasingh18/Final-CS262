@@ -1,7 +1,7 @@
 
 import grpc
 from grpc._server import _Server
-import scrape_pb2
+import scrape_pb2 as scrape
 import scrape_pb2_grpc
 from keywords import *
 
@@ -38,6 +38,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # a priority queue to hold the urls that our crawler needs to visit
         # the urls will be stored in the format `[(weight, url), (weight, url)]`
         self.urls_queue = PriorityQueue()
+        # add the seed URL to our priority queue
+        self.urls_queue.put((-100, 'https://www.wtatennis.com/'))
 
         # Get the list of top 50 WTA players
         data = pd.read_csv('player_names.txt', delimiter="\t", header=0).values
@@ -125,7 +127,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         self.urls_queue_lock.release()
 
         # return the next URL for the client to scrape
-        return next_url
+        return scrape.Message(message = next_url)
 
     def find_most_popular_players(self):
         # returns 1) the total # player mentions and 2) a dict of 5 popular players:count
