@@ -73,6 +73,7 @@ class CrawlerClient:
         # for each of the top 50 players that we want to search for
         # read the text file to find the latest year mentioned and the players
         player_count_on_site = {}
+        player_count = 0
         for player in self.player_list:
             count_from_cur_site = html_text.count(player)
             if count_from_cur_site > 0:

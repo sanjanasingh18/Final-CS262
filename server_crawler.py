@@ -102,6 +102,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # if this is not an intialization request on the client's
         # behalf, process the client data
         if scraped_url_weight != CLIENT_BYPASS:
+            print("Processing URL data from client...")
             player_frequencies_on_url = request.players_freq
             new_urls = request.hyperlinks
 
@@ -121,10 +122,14 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
                 # add the new hyperlinks to the PriorityQueue according to the weight
                 for url in new_urls:
                     self.add_url_to_prioqueue(scraped_url_weight, url)
+        else:
+            print("Client is querying for a new link... no client data to be processed.")
 
         if not self.urls_queue.empty():
             # get the next highest priority URL from the queue to be scraped
-            next_url = self.urls_queue.get()
+            print('pre queue', self.urls_queue)
+            next_url = self.urls_queue.get()[1]
+            print('post getting', next_url, self.urls_queue)
 
             self.log.info('Crawling next site: %s', next_url)
 
