@@ -122,18 +122,19 @@ class CrawlerClient:
         # request.players_freq.CopyFrom(players_freq_var)
         # request.hyperlinks.CopyFrom(hyperlinks_var)
 
-        # next_url = self.connection.process_hyperlinks(request).message
+        next_url = self.connection.process_hyperlinks(request).message
 
-        next_url = self.connection.process_hyperlinks(request)
-        next_url = next_url.message
+        # next_url = self.connection.process_hyperlinks(request)
+        # next_url = next_url.message
         print("NEW URL", next_url)
 
         while True:
             while next_url == PRIORITY_QUEUE_EMPTY:
                 # populate request data object
                 request = scrape.Data(weight=CLIENT_BYPASS)
-                next_url = self.connection.process_hyperlinks(request)
-                next_url = next_url.message
+                next_url = self.connection.process_hyperlinks(request).message
+                # next_url = self.connection.process_hyperlinks(request)
+                # next_url = next_url.message
                 print("NEXTTTT URL", next_url)
 
             next_html = self.get_url_info(next_url)
@@ -149,10 +150,10 @@ class CrawlerClient:
                 players_freq=player_count_on_site, 
                 hyperlinks=new_hyperlinks)
             
-            # next_url = self.connection.process_hyperlinks(request).message
+            next_url = self.connection.process_hyperlinks(request).message
 
-            next_url = self.connection.process_hyperlinks(request)
-            next_url = next_url.message
+            # next_url = self.connection.process_hyperlinks(request)
+            # next_url = next_url.message
 
         return "TODO"
     # TODO add a while that continuously calls on the process_hyperlinks function from the server

@@ -144,7 +144,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         self.urls_queue_lock.release()
 
         # return the next URL for the client to scrape
-        return scrape.Message(message = next_url)
+        return scrape.Message(message=next_url)
 
     def find_most_popular_players(self):
         # returns 1) the total # player mentions and 2) a dict of 5 popular players:count
