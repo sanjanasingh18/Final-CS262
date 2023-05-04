@@ -96,8 +96,6 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # create variables for the values we receive from the client
         scraped_url_weight = request.weight
 
-        # lock the urls queue mutex
-        self.urls_queue_lock.acquire()
         
         # if this is not an intialization request on the client's
         # behalf, process the client data
@@ -106,7 +104,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
 
             player_frequencies_on_url = self.convert_proto_to_dict(request.players_freq)
             new_urls = self.convert_proto_to_list(request.hyperlinks)
-            print('Info from client', player_frequencies_on_url, new_urls)
+            #print('Info from client', player_frequencies_on_url, new_urls)
             
             # lock the player popularity mutex
             self.player_popularity_lock.acquire()
@@ -122,28 +120,47 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             # check if the weight of the scraped URLs meets the threshold weight
             if scraped_url_weight < URL_WEIGHT_THRESHOLD:
                 # add the new hyperlinks to the PriorityQueue according to the weight
+                # lock the urls queue mutex
+                self.urls_queue_lock.acquire()
                 for url in new_urls:
                     self.add_url_to_prioqueue(scraped_url_weight, url)
+                # release mutex
+                self.urls_queue_lock.release()
+            
+            # after processing this, print the player popularity stats
+            self.find_most_popular_players()
+
         else:
             print("Client is querying for a new link... no client data to be processed.")
 
+        # lock the urls queue mutex
+        self.urls_queue_lock.acquire()
         if not self.urls_queue.empty():
             # get the next highest priority URL from the queue to be scraped
-            print('pre queue', self.urls_queue)
+            # print('pre queue', self.urls_queue)
             next_url = self.urls_queue.get()[1]
-            print('post getting', next_url, self.urls_queue)
 
-            self.log.info('Crawling next site: %s', next_url)
-
+            # add next url to visited ASAP so we do not visit sites multiple times
             # lock the visited urls mutex
             self.visited_urls_lock.acquire()
+
+            # check that next_url isn't in visited
+            while next_url in self.visited_urls:
+                next_url = self.urls_queue.get()[1]
+
             # add the next url that will be scraped to the visited URLs list
             self.visited_urls.append(next_url)
             # release mutex
             self.visited_urls_lock.release()
+
+            # print('post getting', next_url)
+
+            self.log.info('Crawling next site: %s', next_url)
         
         # release mutex
         self.urls_queue_lock.release()
+
+
 
         # return the next URL for the client to scrape
         return scrape.Message(message=next_url)
@@ -173,7 +190,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         five_most_common_players = self.player_popularity.most_common(5)
         for player, count in five_most_common_players:
             print(player + " was mentioned " + str(count) + " times. They comprise " +
-                  str(count/total_mention_count) + "% of total mentions.")
+                  str((count/total_mention_count)*100) + "% of total mentions.")
 
         # release the player popularity mutex
         self.player_popularity_lock.release()
@@ -211,6 +228,8 @@ class ServerRunner:
 
     # a function to start the server
     def run(self):
+        # add in timer function- run this for X minutes and then print stats @ the end.
+        
         self.server_crawler = CrawlerServer()
         self.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
         scrape_pb2_grpc.add_CrawlServicer_to_server(

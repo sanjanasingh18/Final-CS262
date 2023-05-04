@@ -1,8 +1,8 @@
 # Set our PORT variable
-PORT = 8888
+PORT = 8889
 
 # change the HOST variable according to the hostname of your computer
-HOST = "dhcp-10-250-239-247.harvard.edu" # sanj
+HOST =  "0.0.0.0"#"dhcp-10-250-239-247.harvard.edu" # sanj
 #HOST = "dhcp-10-250-168-147.harvard.edu" # soph
 ADDRESS = (HOST, PORT)
 

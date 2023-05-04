@@ -39,8 +39,6 @@ class CrawlerClient:
         self.player_list = np.reshape(data, -1)
 
     def get_hyperlinks(self, url, html):
-        # print("gethyp", url)
-        # print("HTMLLLL", html)
         list_of_hyperlinks = []
         soup = BeautifulSoup(html, 'html.parser')
         for link in soup.find_all('a'):
@@ -123,8 +121,11 @@ class CrawlerClient:
         
     # function for converting our url list to a proto value
     def convert_list_to_proto(self, list):
+        # convert list to a set to get rid of duplicate hyperlinks
+        set_list = set(list)
+
         output = str(LISTDELIM)
-        for url in list:
+        for url in set_list:
             output += str(url) + str(LISTDELIM)
 
         return output
@@ -147,19 +148,14 @@ class CrawlerClient:
 
         next_url = self.connection.process_hyperlinks(request).message
 
-        # next_url = self.connection.process_hyperlinks(request)
-        # next_url = next_url.message
-        print("NEW URL", next_url)
 
         while True:
             while next_url == PRIORITY_QUEUE_EMPTY:
                 # populate request data object
                 request = scrape.Data(weight=CLIENT_BYPASS)
                 next_url = self.connection.process_hyperlinks(request).message
-                # next_url = self.connection.process_hyperlinks(request)
-                # next_url = next_url.message
-                print("NEXTTTT URL", next_url)
 
+            print("Next URL to scrape:", next_url)
             next_html = self.get_url_info(next_url)
             player_count_on_site, player_count, max_year = self.get_player_info_and_date(
                 next_html)
@@ -169,7 +165,7 @@ class CrawlerClient:
             new_hyperlinks = self.get_hyperlinks(next_url, next_html)
 
 
-            print("CLIENT SIDE", player_count, max_year, weight, player_count_on_site)
+            print("Stats from this site:", player_count, max_year, weight, player_count_on_site)
             players_freq = self.convert_dict_to_proto(player_count_on_site)
             hyperlinks = self.convert_list_to_proto(new_hyperlinks)
 
@@ -179,14 +175,6 @@ class CrawlerClient:
                 hyperlinks=hyperlinks)
             
             next_url = self.connection.process_hyperlinks(request).message
-
-            # next_url = self.connection.process_hyperlinks(request)
-            # next_url = next_url.message
-
-        return "TODO"
-    # TODO add a while that continuously calls on the process_hyperlinks function from the server
-    # populate Data object in the function above and then fix get hyperlink logic
-    # in our crawl
 
 
 if __name__ == '__main__':

@@ -1,0 +1,219 @@
+2023-05-04:14:44:06,379, Starting web crawler server...
+2023-05-04:14:44:15,093, Crawling next site: https://www.wtatennis.com/
+2023-05-04:14:44:15,486, Finished crawling a site with 16 distinct players mentioned and 161 hyperlinks.
+2023-05-04:14:44:15,487, Crawling next site: http://instagram.com/wta
+2023-05-04:14:44:16,704, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:16,704, Crawling next site: http://tennisplaysforpeace.com/
+2023-05-04:14:44:16,770, Finished crawling a site with 0 distinct players mentioned and 1 hyperlinks.
+2023-05-04:14:44:16,771, Crawling next site: http://www.usopenseries.com/home/default.sps
+2023-05-04:14:44:17,722, Finished crawling a site with 3 distinct players mentioned and 54 hyperlinks.
+2023-05-04:14:44:17,722, Crawling next site: http://www.youtube.com/user/wta
+2023-05-04:14:44:18,297, Finished crawling a site with 0 distinct players mentioned and 15 hyperlinks.
+2023-05-04:14:44:18,297, Crawling next site: https://join.whoop.com/WTA/=_blank
+2023-05-04:14:44:18,777, Finished crawling a site with 0 distinct players mentioned and 1 hyperlinks.
+2023-05-04:14:44:18,778, Crawling next site: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
+2023-05-04:14:44:19,218, Finished crawling a site with 10 distinct players mentioned and 10 hyperlinks.
+2023-05-04:14:44:19,218, Crawling next site: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
+2023-05-04:14:44:19,896, Finished crawling a site with 10 distinct players mentioned and 10 hyperlinks.
+2023-05-04:14:44:19,896, Crawling next site: https://podcasts.apple.com/us/podcast/wta-insider-podcast/id1052842829
+2023-05-04:14:44:20,980, Finished crawling a site with 6 distinct players mentioned and 42 hyperlinks.
+2023-05-04:14:44:20,980, Crawling next site: https://podcasts.apple.com/us/podcast/wta-insider-podcast/id1052842829
+2023-05-04:14:44:21,183, Finished crawling a site with 6 distinct players mentioned and 42 hyperlinks.
+2023-05-04:14:44:21,184, Crawling next site: https://podcasts.apple.com/us/podcast/wta-insider-podcast/id1052842829
+2023-05-04:14:44:21,480, Finished crawling a site with 6 distinct players mentioned and 42 hyperlinks.
+2023-05-04:14:44:21,480, Crawling next site: https://podcasts.google.com/feed/aHR0cDovL3d0YWluc2lkZXIubGlic3luLmNvbS9yc3M?sa=X&ved=0CAMQ4aUDahcKEwig5cqts__1AhUAAAAAHQAAAAAQAQ
+2023-05-04:14:44:22,898, Finished crawling a site with 28 distinct players mentioned and 10 hyperlinks.
+2023-05-04:14:44:22,899, Crawling next site: http://www.wtatennis.com/
+2023-05-04:14:44:23,285, Crawling next site: https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://podcasts.google.com/feed/aHR0cDovL3d0YWluc2lkZXIubGlic3luLmNvbS9yc3M?sa%3DX%26ved%3D0CAMQ4aUDahcKEwig5cqts__1AhUAAAAAHQAAAAAQAQ&followup=https://podcasts.google.com/feed/aHR0cDovL3d0YWluc2lkZXIubGlic3luLmNvbS9yc3M?sa%3DX%26ved%3D0CAMQ4aUDahcKEwig5cqts__1AhUAAAAAHQAAAAAQAQ&ec=GAZA2wM
+2023-05-04:14:44:23,315, Finished crawling a site with 16 distinct players mentioned and 161 hyperlinks.
+2023-05-04:14:44:23,316, Crawling next site: https://apps.apple.com/app/apple-store/id1398000105?pt=9008&ct=SideMenuLink&mt=8
+2023-05-04:14:44:23,757, Finished crawling a site with 0 distinct players mentioned and 6 hyperlinks.
+2023-05-04:14:44:23,757, Crawling next site: https://myaccount.google.com/privacypolicy?hl=en-US
+2023-05-04:14:44:24,176, Finished crawling a site with 0 distinct players mentioned and 45 hyperlinks.
+2023-05-04:14:44:24,176, Crawling next site: https://myaccount.google.com/termsofservice?hl=en-US
+2023-05-04:14:44:24,533, Finished crawling a site with 1 distinct players mentioned and 264 hyperlinks.
+2023-05-04:14:44:24,535, Crawling next site: https://play.google.com/store/apps/details?id=com.google.android.apps.podcasts&utm_source=google_podcasts&utm_campaign=pw_promo&hl=en-US
+2023-05-04:14:44:24,911, Finished crawling a site with 0 distinct players mentioned and 46 hyperlinks.
+2023-05-04:14:44:24,911, Crawling next site: https://support.google.com/podcast-publishers/answer/10514876?hl=en-US
+2023-05-04:14:44:25,114, Finished crawling a site with 1 distinct players mentioned and 143 hyperlinks.
+2023-05-04:14:44:25,115, Crawling next site: https://support.google.com/podcast-publishers/answer/9476656?hl=en-US
+2023-05-04:14:44:25,711, Finished crawling a site with 0 distinct players mentioned and 43 hyperlinks.
+2023-05-04:14:44:25,711, Crawling next site: https://support.google.com/websearch/?p=podcasts&hl=en-US
+2023-05-04:14:44:25,721, Finished crawling a site with 0 distinct players mentioned and 38 hyperlinks.
+2023-05-04:14:44:25,721, Crawling next site: https://www.google.com/intl/en/about/products
+2023-05-04:14:44:26,539, Finished crawling a site with 0 distinct players mentioned and 190 hyperlinks.
+2023-05-04:14:44:26,540, Crawling next site: http://www.wtatennis.com/apps
+2023-05-04:14:44:26,640, Finished crawling a site with 0 distinct players mentioned and 27 hyperlinks.
+2023-05-04:14:44:26,640, Crawling next site: http://www.wtatennis.com/head-to-head/326408/319526
+2023-05-04:14:44:26,851, Finished crawling a site with 0 distinct players mentioned and 102 hyperlinks.
+2023-05-04:14:44:26,851, Crawling next site: http://www.wtatennis.com/head-to-head/326408/319526
+2023-05-04:14:44:26,937, Finished crawling a site with 1 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:26,937, Crawling next site: http://www.wtatennis.com/news
+2023-05-04:14:44:27,357, Finished crawling a site with 1 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:27,357, Crawling next site: http://www.wtatennis.com/news
+2023-05-04:14:44:27,450, Finished crawling a site with 12 distinct players mentioned and 132 hyperlinks.
+2023-05-04:14:44:27,450, Crawling next site: http://www.wtatennis.com/news/3251005/serena-announces-second-pregnancy-at-met-gala
+2023-05-04:14:44:27,605, Finished crawling a site with 12 distinct players mentioned and 132 hyperlinks.
+2023-05-04:14:44:27,605, Crawling next site: http://www.wtatennis.com/news/3251608/how-arantxa-sanchez-vicario-changed-the-game-for-spanish-tennis-players
+2023-05-04:14:44:27,919, Finished crawling a site with 4 distinct players mentioned and 126 hyperlinks.
+2023-05-04:14:44:27,920, Crawling next site: http://www.wtatennis.com/news/3253341/kudermetova-overcomes-pegula-in-madrid-to-make-first-wta-1000-semifinal
+2023-05-04:14:44:28,052, Finished crawling a site with 8 distinct players mentioned and 116 hyperlinks.
+2023-05-04:14:44:28,052, Crawling next site: http://www.wtatennis.com/news/3253524/raducanu-to-miss-the-next-few-months-after-ankle-and-hand-surgeries
+2023-05-04:14:44:28,396, Finished crawling a site with 4 distinct players mentioned and 119 hyperlinks.
+2023-05-04:14:44:28,397, Crawling next site: http://www.wtatennis.com/news/3253772/by-the-numbers-swiatek-sails-past-martic-into-madrid-semifinals
+2023-05-04:14:44:28,429, Finished crawling a site with 7 distinct players mentioned and 122 hyperlinks.
+2023-05-04:14:44:28,430, Crawling next site: http://www.wtatennis.com/news/3253777/madrid-semifinal-preview-swiatek-kudermetova-look-for-spot-in-final
+2023-05-04:14:44:28,710, Finished crawling a site with 8 distinct players mentioned and 121 hyperlinks.
+2023-05-04:14:44:28,711, Crawling next site: http://www.wtatennis.com/news/3253784/corpay-travel-tips-madrid
+2023-05-04:14:44:28,861, Finished crawling a site with 10 distinct players mentioned and 120 hyperlinks.
+2023-05-04:14:44:28,862, Crawling next site: http://www.wtatennis.com/news/3287309/sabalenka-surges-past-sakkari-into-second-madrid-final
+2023-05-04:14:44:29,036, Finished crawling a site with 5 distinct players mentioned and 116 hyperlinks.
+2023-05-04:14:44:29,036, Crawling next site: http://www.wtatennis.com/photos
+2023-05-04:14:44:29,151, Finished crawling a site with 4 distinct players mentioned and 120 hyperlinks.
+2023-05-04:14:44:29,151, Crawling next site: http://www.wtatennis.com/photos
+2023-05-04:14:44:29,456, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:29,456, Crawling next site: http://www.wtatennis.com/photos/3013223/marathon-marvels-2023-all-this-year-s-three-hour-matches
+2023-05-04:14:44:29,542, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:29,542, Crawling next site: http://www.wtatennis.com/photos/3013224/great-escapes-2023-winning-from-match-point-down
+2023-05-04:14:44:29,964, Finished crawling a site with 25 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:29,964, Crawling next site: http://www.wtatennis.com/wta-privacy-policy
+2023-05-04:14:44:30,073, Finished crawling a site with 26 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:30,073, Crawling next site: https://twitter.com/WTA
+2023-05-04:14:44:30,461, Finished crawling a site with 1 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:30,462, Crawling next site: https://weibo.com/wta
+2023-05-04:14:44:31,513, Finished crawling a site with 0 distinct players mentioned and 6 hyperlinks.
+2023-05-04:14:44:31,513, Crawling next site: https://wtacharities.wtatennis.com/
+2023-05-04:14:44:32,969, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:32,969, Crawling next site: https://wtacharities.wtatennis.com/
+2023-05-04:14:44:34,004, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:34,005, Crawling next site: https://wtt.com/
+2023-05-04:14:44:34,022, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:34,022, Crawling next site: https://www.atptour.com/
+2023-05-04:14:44:34,814, Finished crawling a site with 1 distinct players mentioned and 186 hyperlinks.
+2023-05-04:14:44:34,815, Crawling next site: https://www.atptour.com/en/privacy-policy
+2023-05-04:14:44:35,240, Finished crawling a site with 0 distinct players mentioned and 102 hyperlinks.
+2023-05-04:14:44:35,240, Crawling next site: https://www.billiejeankingcup.com/en/home.aspx
+2023-05-04:14:44:35,243, Finished crawling a site with 1 distinct players mentioned and 140 hyperlinks.
+2023-05-04:14:44:35,244, Crawling next site: https://www.facebook.com/WTA
+2023-05-04:14:44:36,034, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:36,034, Crawling next site: https://www.facebook.com/WTA
+2023-05-04:14:44:36,050, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:36,050, Crawling next site: https://www.hologic.com/
+2023-05-04:14:44:36,984, Finished crawling a site with 0 distinct players mentioned and 166 hyperlinks.
+2023-05-04:14:44:36,984, Crawling next site: https://www.instagram.com/wta/
+2023-05-04:14:44:37,097, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:37,097, Crawling next site: https://www.itftennis.com/home.aspx
+2023-05-04:14:44:37,184, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:37,184, Crawling next site: https://www.itia.tennis/
+2023-05-04:14:44:37,905, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:37,905, Crawling next site: https://www.modernhealth.com/
+2023-05-04:14:44:38,199, Finished crawling a site with 1 distinct players mentioned and 58 hyperlinks.
+2023-05-04:14:44:38,199, Crawling next site: https://www.morganstanley.com/articles/wta-partnership-2023
+2023-05-04:14:44:38,459, Finished crawling a site with 0 distinct players mentioned and 91 hyperlinks.
+2023-05-04:14:44:38,460, Crawling next site: https://www.sap.com/index.html?campaigncode=CRM-XH21-OSP-WTASpon
+2023-05-04:14:44:38,770, Finished crawling a site with 2 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:38,770, Crawling next site: https://www.teamworkonline.com/golf-tennis-jobs/protennisjobs/wta?employment_opportunity_search%5Bquery%5D=&employment_opportunity_search%5Bcategory_id%5D=&employment_opportunity_search%5Borganization_id%5D=29707&employment_opportunity_search%5Bcareer_level_id%5D=
+2023-05-04:14:44:38,817, Finished crawling a site with 0 distinct players mentioned and 50 hyperlinks.
+2023-05-04:14:44:38,818, Crawling next site: https://www.tennis-warehouse.com/?from=wta&utm_source=wta&utm_medium=shop_button&utm_campaign=navigation_bar
+2023-05-04:14:44:39,280, Finished crawling a site with 0 distinct players mentioned and 20 hyperlinks.
+2023-05-04:14:44:39,280, Crawling next site: https://www.tennisfame.com/
+2023-05-04:14:44:39,462, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:39,462, Crawling next site: https://www.twitter.com/WTA
+2023-05-04:14:44:40,199, Finished crawling a site with 0 distinct players mentioned and 892 hyperlinks.
+2023-05-04:14:44:40,199, Crawling next site: https://www.womenssportsfoundation.org/
+2023-05-04:14:44:40,448, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:40,448, Crawling next site: https://www.wtatennis.com
+2023-05-04:14:44:40,742, Finished crawling a site with 16 distinct players mentioned and 161 hyperlinks.
+2023-05-04:14:44:40,742, Crawling next site: https://www.wtatennis.com/about
+2023-05-04:14:44:40,858, Finished crawling a site with 0 distinct players mentioned and 6 hyperlinks.
+2023-05-04:14:44:40,859, Crawling next site: https://www.wtatennis.com/about
+2023-05-04:14:44:40,961, Finished crawling a site with 8 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:40,962, Crawling next site: https://www.wtatennis.com/about
+2023-05-04:14:44:41,098, Finished crawling a site with 8 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:41,098, Crawling next site: https://www.wtatennis.com/accessibility
+2023-05-04:14:44:41,178, Finished crawling a site with 8 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:41,179, Crawling next site: https://www.wtatennis.com/anti-doping
+2023-05-04:14:44:41,481, Finished crawling a site with 0 distinct players mentioned and 99 hyperlinks.
+2023-05-04:14:44:41,481, Crawling next site: https://www.wtatennis.com/apps
+2023-05-04:14:44:41,500, Finished crawling a site with 0 distinct players mentioned and 101 hyperlinks.
+2023-05-04:14:44:41,500, Crawling next site: https://www.wtatennis.com/apps
+2023-05-04:14:44:41,645, Finished crawling a site with 0 distinct players mentioned and 102 hyperlinks.
+2023-05-04:14:44:41,645, Crawling next site: https://www.wtatennis.com/board-of-directors
+2023-05-04:14:44:41,908, Finished crawling a site with 0 distinct players mentioned and 102 hyperlinks.
+2023-05-04:14:44:41,909, Crawling next site: https://www.wtatennis.com/board-of-directors-wta-ventures
+2023-05-04:14:44:42,013, Finished crawling a site with 0 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:42,014, Crawling next site: https://www.wtatennis.com/breakpoint
+2023-05-04:14:44:42,147, Finished crawling a site with 0 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:42,147, Crawling next site: https://www.wtatennis.com/breakpoint
+2023-05-04:14:44:42,209, Finished crawling a site with 5 distinct players mentioned and 121 hyperlinks.
+2023-05-04:14:44:42,210, Crawling next site: https://www.wtatennis.com/broadcast
+2023-05-04:14:44:42,524, Finished crawling a site with 5 distinct players mentioned and 121 hyperlinks.
+2023-05-04:14:44:42,524, Crawling next site: https://www.wtatennis.com/broadcast
+2023-05-04:14:44:42,590, Finished crawling a site with 0 distinct players mentioned and 155 hyperlinks.
+2023-05-04:14:44:42,590, Crawling next site: https://www.wtatennis.com/coaches
+2023-05-04:14:44:42,721, Finished crawling a site with 0 distinct players mentioned and 155 hyperlinks.
+2023-05-04:14:44:42,722, Crawling next site: https://www.wtatennis.com/coaches
+2023-05-04:14:44:43,027, Finished crawling a site with 6 distinct players mentioned and 127 hyperlinks.
+2023-05-04:14:44:43,029, Crawling next site: https://www.wtatennis.com/contact
+2023-05-04:14:44:43,100, Finished crawling a site with 6 distinct players mentioned and 127 hyperlinks.
+2023-05-04:14:44:43,100, Crawling next site: https://www.wtatennis.com/cookbook
+2023-05-04:14:44:43,246, Finished crawling a site with 0 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:43,247, Crawling next site: https://www.wtatennis.com/cookbook
+2023-05-04:14:44:43,910, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:43,911, Crawling next site: https://www.wtatennis.com/doubles
+2023-05-04:14:44:43,911, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:14:44:43,911, Crawling next site: https://www.wtatennis.com/doubles
+2023-05-04:14:44:44,130, Finished crawling a site with 6 distinct players mentioned and 112 hyperlinks.
+2023-05-04:14:44:44,131, Crawling next site: https://www.wtatennis.com/for-the-game
+2023-05-04:14:44:44,177, Finished crawling a site with 6 distinct players mentioned and 112 hyperlinks.
+2023-05-04:14:44:44,179, Crawling next site: https://www.wtatennis.com/for-the-game
+2023-05-04:14:44:44,461, Finished crawling a site with 3 distinct players mentioned and 108 hyperlinks.
+2023-05-04:14:44:44,461, Crawling next site: https://www.wtatennis.com/for-the-game
+2023-05-04:14:44:44,613, Finished crawling a site with 3 distinct players mentioned and 108 hyperlinks.
+2023-05-04:14:44:44,614, Crawling next site: https://www.wtatennis.com/head-to-head
+2023-05-04:14:44:44,733, Finished crawling a site with 3 distinct players mentioned and 108 hyperlinks.
+2023-05-04:14:44:44,734, Crawling next site: https://www.wtatennis.com/head-to-head
+2023-05-04:14:44:45,205, Finished crawling a site with 1 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:45,207, Crawling next site: https://www.wtatennis.com/management-team
+2023-05-04:14:44:45,241, Finished crawling a site with 1 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:45,242, Crawling next site: https://www.wtatennis.com/news
+2023-05-04:14:44:45,552, Finished crawling a site with 12 distinct players mentioned and 132 hyperlinks.
+2023-05-04:14:44:45,552, Crawling next site: https://www.wtatennis.com/news
+2023-05-04:14:44:45,587, Finished crawling a site with 1 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:45,588, Crawling next site: https://www.wtatennis.com/news
+2023-05-04:14:44:45,838, Finished crawling a site with 12 distinct players mentioned and 132 hyperlinks.
+2023-05-04:14:44:45,839, Crawling next site: https://www.wtatennis.com/newsletter
+2023-05-04:14:44:45,867, Finished crawling a site with 12 distinct players mentioned and 132 hyperlinks.
+2023-05-04:14:44:45,867, Crawling next site: https://www.wtatennis.com/newsletter
+2023-05-04:14:44:46,185, Finished crawling a site with 0 distinct players mentioned and 62 hyperlinks.
+2023-05-04:14:44:46,185, Crawling next site: https://www.wtatennis.com/official-guide
+2023-05-04:14:44:46,185, Finished crawling a site with 0 distinct players mentioned and 62 hyperlinks.
+2023-05-04:14:44:46,186, Crawling next site: https://www.wtatennis.com/official-partners
+2023-05-04:14:44:46,528, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:46,528, Crawling next site: https://www.wtatennis.com/original-9
+2023-05-04:14:44:46,529, Finished crawling a site with 1 distinct players mentioned and 109 hyperlinks.
+2023-05-04:14:44:46,529, Crawling next site: https://www.wtatennis.com/original-9
+2023-05-04:14:44:46,879, Finished crawling a site with 1 distinct players mentioned and 125 hyperlinks.
+2023-05-04:14:44:46,879, Crawling next site: https://www.wtatennis.com/partnership-opportunities
+2023-05-04:14:44:46,889, Finished crawling a site with 1 distinct players mentioned and 125 hyperlinks.
+2023-05-04:14:44:46,890, Crawling next site: https://www.wtatennis.com/photos
+2023-05-04:14:44:47,214, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:47,214, Crawling next site: https://www.wtatennis.com/photos
+2023-05-04:14:44:47,269, Finished crawling a site with 0 distinct players mentioned and 101 hyperlinks.
+2023-05-04:14:44:47,269, Crawling next site: https://www.wtatennis.com/player-development
+2023-05-04:14:44:47,421, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:47,422, Crawling next site: https://www.wtatennis.com/players
+2023-05-04:14:44:47,573, Finished crawling a site with 0 distinct players mentioned and 105 hyperlinks.
+2023-05-04:14:44:47,573, Crawling next site: https://www.wtatennis.com/players
+2023-05-04:14:44:47,767, Finished crawling a site with 0 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:47,767, Crawling next site: https://www.wtatennis.com/press-center
+2023-05-04:14:44:47,803, Finished crawling a site with 0 distinct players mentioned and 100 hyperlinks.
+2023-05-04:14:44:47,803, Crawling next site: https://www.wtatennis.com/privacy-policy
+2023-05-04:14:44:47,947, Finished crawling a site with 1 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:47,948, Crawling next site: https://www.wtatennis.com/privacy-policy
+2023-05-04:14:44:48,226, Finished crawling a site with 1 distinct players mentioned and 106 hyperlinks.
+2023-05-04:14:44:48,227, Crawling next site: https://www.wtatennis.com/rankings
+2023-05-04:14:44:48,431, Finished crawling a site with 10 distinct players mentioned and 246 hyperlinks.
+2023-05-04:14:44:48,432, Crawling next site: https://www.wtatennis.com/rankings/singles
+2023-05-04:14:44:48,868, Finished crawling a site with 0 distinct players mentioned and 105 hyperlinks.
+2023-05-04:14:44:48,868, Crawling next site: https://www.wtatennis.com/rankings/singles
