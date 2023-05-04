@@ -1,0 +1,10 @@
+2023-05-04:16:59:12,944, Starting new web crawler server...
+2023-05-04:16:59:17,136, Crawling next site: https://www.wtatennis.com/
+2023-05-04:16:59:17,545, Finished crawling a site with 16 distinct players mentioned and 105 hyperlinks.
+2023-05-04:16:59:17,546, Exception calling application: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/grpc/_server.py", line 444, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server_crawler.py", line 225, in process_hyperlinks
+    print("After visiting " + len(self.visited_urls) + " sites, we have the following statistics:")
+TypeError: can only concatenate str (not "int") to str

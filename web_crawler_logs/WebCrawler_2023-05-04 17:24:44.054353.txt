@@ -1,0 +1,16 @@
+2023-05-04:17:24:44,055, Restoring web crawler server...
+2023-05-04:17:24:49,873, Crawling next site: https://www.espn.com/
+2023-05-04:17:24:50,129, Finished crawling a site with 2 distinct players mentioned and 115 hyperlinks.
+2023-05-04:17:24:50,130, Crawling next site: http://espn.com/video/clip?id=37330973
+2023-05-04:17:24:50,629, Finished crawling a site with 0 distinct players mentioned and 40 hyperlinks.
+2023-05-04:17:24:50,629, Crawling next site: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-05-04:17:24:51,037, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:17:24:51,038, Crawling next site: http://www.espn.com/espn/apps/download?app=espn
+2023-05-04:17:24:51,453, Finished crawling a site with 0 distinct players mentioned and 21 hyperlinks.
+2023-05-04:17:24:51,453, Crawling next site: http://www.espn.com/espn/mobile/products/products/_/id/17145860
+2023-05-04:17:24:51,927, Finished crawling a site with 0 distinct players mentioned and 7 hyperlinks.
+2023-05-04:17:24:51,928, Crawling next site: http://www.espn.com/espn/story/_/id/27852002/the-espn-daily-podcast-how-watch-episode-guide-more
+2023-05-04:17:24:52,531, Finished crawling a site with 7 distinct players mentioned and 1035 hyperlinks.
+2023-05-04:17:24:52,534, Crawling next site: http://espn.com/espnradio/play?id=28638866
+2023-05-04:17:24:53,005, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:17:24:53,005, Crawling next site: http://espn.com/espnradio/play?id=28770027

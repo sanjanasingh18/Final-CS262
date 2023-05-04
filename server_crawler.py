@@ -5,6 +5,8 @@ import scrape_pb2 as scrape
 import scrape_pb2_grpc
 from keywords import *
 
+import time
+import os
 import socket
 import threading
 from concurrent import futures
@@ -24,15 +26,9 @@ import pandas as pd
 
 
 class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
-    # initialize the server for our  distributed web crawler
-    def __init__(self):
-        # Mutex lock so only one thread can access each of these data structures at a given time
-        # Need this to be a Recursive mutex as some subfunctions call on lock on
-        # top of a locked function
-        self.visited_urls_lock = threading.RLock()
-        self.urls_queue_lock = threading.RLock()
-        self.player_popularity_lock = threading.RLock()
 
+    def setUpFromScratch(self):
+        # initialize new variables
         # create a variable to store the total number of sites we have crawled
         self.number_of_sites_crawled = 0
         # a list to keep track of the urls that our crawler has visited
@@ -43,18 +39,34 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # add the seed URL to our priority queue
         self.urls_queue.put((-100, 'https://www.wtatennis.com/'))
 
+        # initialize Counter to have items for each player
+        self.player_popularity = Counter(self.player_list)
+
+        # save to our persistent storage
+        # self.save_to_pickle()
+
+        # log the server initialization 
+        self.log.info('Starting new web crawler server...')
+
+    # initialize the server for our  distributed web crawler
+    def __init__(self):
+        # Mutex lock so only one thread can access each of these data structures at a given time
+        # Need this to be a Recursive mutex as some subfunctions call on lock on
+        # top of a locked function
+        self.visited_urls_lock = threading.RLock()
+        self.urls_queue_lock = threading.RLock()
+        self.player_popularity_lock = threading.RLock()
+        
+
         # Get the list of top 50 WTA players
         data = pd.read_csv('player_names.txt', delimiter="\t", header=0).values
         self.player_list = np.reshape(data, -1)
 
-        # initialize Counter to have items for each player
-        self.player_popularity = Counter(self.player_list)
-        # self.player_popularity = {}
+        # persistent output files for the visisted list and player populatiry dictionary
+        self.restore_path = "restored.p"
 
-        # # initialize the count vector to be 0 for each player
-        # for player in self.player_list:
-        #     self.player_popularity[player] = 0
-
+        # # persistent file for the URLs priorityQueue
+        # self.restore_queue_path = "restore_queue.csv"
 
 
         # create a logger file name and use that file to log crawling activities
@@ -68,7 +80,70 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
 
         self.log = logging.getLogger(__name__)
 
-        self.log.info('Starting web crawler server...')
+        # check if the pickle file to store the state as data exists, 
+        # if not then create the file
+        # if os.path.isfile("fake.csv"):
+        if os.path.isfile(self.restore_path):
+            # restore the queue, player_popularity, visited URLS
+            # Load data (deserialize)
+            try: 
+                with open(self.restore_path, 'rb') as handle:
+                    restored_tuple = pickle.load(handle)
+                    # restored_tuple = pickle.load(open(self.restore_path, "rb"))
+                    self.visited_urls = restored_tuple[0]
+                    # Make this a dictionary TODO so that the urls queues can be persistent 
+                    # TODO save priorityqueue and be able to read it
+                    self.urls_queue = PriorityQueue()
+                    # add the seed URL to our priority queue
+                    self.urls_queue.put((-100, 'https://www.espn.com/'))
+                    # self.urls_queue = self.toPriorityQueue(restored_tuple[1])
+                    self.player_popularity = restored_tuple[1]
+
+                    print("RESTORED THIS:", restored_tuple, type(self.visited_urls), type(self.urls_queue), type(self.player_popularity))
+
+                    # create a variable to store the total number of sites we have crawled
+                    self.number_of_sites_crawled = len(self.visited_urls)
+                    print("number NUMBER", self.number_of_sites_crawled)
+
+                    # log the server restoration 
+                    self.log.info('Restoring web crawler server...')
+                    print("LOGGING")
+
+            except EOFError:
+                print("Empty pickle file!")
+                self.setUpFromScratch()
+        else:
+            self.setUpFromScratch()
+    
+    def toPriorityQueue(self, dict):
+        print("hiswag")
+
+    # function to create persistent storage
+    def save_to_pickle(self):
+        return "hi"
+        # # lock all the mutexes
+        # self.visited_urls_lock.acquire()
+        # self.urls_queue_lock.acquire()
+        # self.player_popularity_lock.acquire()
+
+        # if self.visited_urls and self.urls_queue and self.player_popularity:
+        #     # update the restore_tuple object so we can save it to our pickle file
+        #     # restore_tuple = (self.visited_urls, self.urls_queue, self.player_popularity)
+        #     restore_tuple = (self.visited_urls, self.player_popularity)
+
+        #     print("Saving this tuple: ", restore_tuple)
+        #     # Store data (serialize)
+        #     with open(self.restore_path, 'wb') as handle:
+        #         pickle.dump(restore_tuple, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        # time.sleep(0.1)
+        # # # save the object to our pickle file
+        # # pickle.dump(restore_tuple, open(self.restore_path, "wb"))
+
+        # # release the mutexes
+        # self.visited_urls_lock.release()
+        # self.urls_queue_lock.release()
+        # self.player_popularity_lock.release()
+
 
     def add_url_to_prioqueue(self, weight, url):
         # logic will be that the weight for each child link will
@@ -84,8 +159,12 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         if url not in self.visited_urls:
             # lock the urls queue mutex
             self.urls_queue_lock.acquire()
-
+            
+            # add the URL to our priorityQueue
             self.urls_queue.put((weight, url))
+
+            # save to our persistent storage
+            self.save_to_pickle()
 
             # release mutex
             self.urls_queue_lock.release()
@@ -115,6 +194,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             # use the player frequency counts from the scraped URL to update our
             # player popularity Counter
             self.player_popularity.update(player_frequencies_on_url)
+            # save to our persistent storage
+            self.save_to_pickle()
             # release mutex
             self.player_popularity_lock.release()
 
@@ -128,12 +209,14 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
                 self.urls_queue_lock.acquire()
                 for url in new_urls:
                     self.add_url_to_prioqueue(scraped_url_weight, url)
+                # save to our persistent storage
+                self.save_to_pickle()
                 # release mutex
                 self.urls_queue_lock.release()
             
             # track how many sites have been visited
             self.visited_urls_lock.acquire()
-            print("After visiting " + len(self.visited_urls) + " sites, we have the following statistics:")
+            print("After visiting " + str(len(self.visited_urls)) + " sites, we have the following statistics:")
             self.visited_urls_lock.release()
 
             # after processing this, print the player popularity stats
@@ -159,6 +242,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
 
             # add the next url that will be scraped to the visited URLs list
             self.visited_urls.append(next_url)
+            # save to our persistent storage
+            self.save_to_pickle()
             # release mutex
             self.visited_urls_lock.release()
 
@@ -256,6 +341,6 @@ class ServerRunner:
 
 
 if __name__ == '__main__':
-    restore = sys.argv[1].lower() == "true"
+    # restore = sys.argv[1].lower() == "true"
     server = ServerRunner()
     server.run()

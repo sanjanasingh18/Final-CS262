@@ -1,0 +1,14 @@
+2023-05-04:17:19:39,897, Starting new web crawler server...
+2023-05-04:17:19:43,928, Crawling next site: https://www.wtatennis.com/
+2023-05-04:17:19:44,464, Finished crawling a site with 16 distinct players mentioned and 105 hyperlinks.
+2023-05-04:17:19:44,465, Crawling next site: http://instagram.com/wta
+2023-05-04:17:19:45,907, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:17:19:45,907, Crawling next site: http://tennisplaysforpeace.com/
+2023-05-04:17:19:45,972, Finished crawling a site with 0 distinct players mentioned and 1 hyperlinks.
+2023-05-04:17:19:45,972, Crawling next site: http://www.usopenseries.com/home/default.sps
+2023-05-04:17:19:46,511, Finished crawling a site with 3 distinct players mentioned and 29 hyperlinks.
+2023-05-04:17:19:46,511, Crawling next site: http://www.youtube.com/user/wta
+2023-05-04:17:19:47,469, Finished crawling a site with 0 distinct players mentioned and 14 hyperlinks.
+2023-05-04:17:19:47,469, Crawling next site: https://join.whoop.com/WTA/=_blank
+2023-05-04:17:19:47,854, Finished crawling a site with 0 distinct players mentioned and 1 hyperlinks.
+2023-05-04:17:19:47,854, Crawling next site: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
