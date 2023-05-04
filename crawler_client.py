@@ -72,6 +72,7 @@ class CrawlerClient:
         # make the player count dictionary for each player mentioned and set that dic to be the dic in our data object
         # for each of the top 50 players that we want to search for
         # read the text file to find the latest year mentioned and the players
+
         player_count_on_site = {}
         player_count = 0
         for player in self.player_list:
@@ -81,6 +82,7 @@ class CrawlerClient:
                 # at the end, update the count
                 player_count_on_site[player] = count_from_cur_site
                 player_count += 1
+
             # cur_count = self.player_popularity[player]
             # self.player_popularity[player] = count_from_cur_site + cur_count
             # if count_from_cur_site > 0:
