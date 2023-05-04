@@ -74,8 +74,20 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # {~- number of names mentioned} + {2023 - latest year mentioned}
         # if the url has not ben visited before add it to the prioqueue
         # print("curr url queue", self.urls_queue.queue)
+        # lock the visisted list mutex
+        self.visited_urls_lock.acquire()
+
         if url not in self.visited_urls:
+            # lock the urls queue mutex
+            self.urls_queue_lock.acquire()
+
             self.urls_queue.put((weight, url))
+
+            # release mutex
+            self.player_popularity_lock.release()
+
+        # release mutex
+        self.visited_urls_lock.release()
 
     def process_hyperlinks(self, request, context):
         # create a variable for the next url to scrape
@@ -117,7 +129,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             self.log.info('Crawling next site: %s', next_url)
 
             # lock the visited urls mutex
-            self.visited_urls_lock.release()
+            self.visited_urls_lock.acquire()
             # add the next url that will be scraped to the visited URLs list
             self.visited_urls.append(next_url)
             # release mutex
@@ -137,6 +149,10 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # return a dict of the 5 most popular players & a list of their counts
         # most_popular = dict(Counter(A).most_common(5))
         # return total_counts, most_popular
+        
+        # lock the player popularity mutex
+        self.player_popularity_lock.acquire()
+
         total_mention_count = sum(self.player_popularity.values())
         max_player_count = 0
         max_player_name = ""
@@ -152,6 +168,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             print(player + " was mentioned " + str(count) + " times. They comprise " +
                   str(count/total_mention_count) + "% of total mentions.")
 
+        # release the player popularity mutex
+        self.player_popularity_lock.release()
 
 # create a class for starting our Crawler server instance
 class ServerRunner:

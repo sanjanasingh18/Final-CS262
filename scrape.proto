@@ -8,7 +8,7 @@ option objc_class_prefix = "RTG";
 package routeguide;
 
 service Crawl {
-    rpc process_hyperlinks(Data) returns (Message) {}   
+    rpc process_hyperlinks(Data) returns (Message);   
 }
 
 message Message {
