@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cscrape.proto\x12\nrouteguide\"\x1a\n\x07Message\x12\x0f\n\x07message\x18\x01 \x01(\t\"\"\n\x04Pair\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\"-\n\nDictionary\x12\x1f\n\x05pairs\x18\x01 \x03(\x0b\x32\x10.routeguide.Pair\"\x14\n\x04List\x12\x0c\n\x04link\x18\x01 \x03(\t\"j\n\x04\x44\x61ta\x12\x0e\n\x06weight\x18\x01 \x01(\x03\x12,\n\x0cplayers_freq\x18\x02 \x01(\x0b\x32\x16.routeguide.Dictionary\x12$\n\nhyperlinks\x18\x03 \x01(\x0b\x32\x10.routeguide.List2D\n\x05\x43rawl\x12;\n\x12process_hyperlinks\x12\x10.routeguide.Data\x1a\x13.routeguide.MessageB6\n\x1bio.grpc.examples.routeguideB\x0fRouteGuideProtoP\x01\xa2\x02\x03RTGb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0cscrape.proto\x12\nrouteguide\"\x1a\n\x07Message\x12\x0f\n\x07message\x18\x01 \x01(\t\"@\n\x04\x44\x61ta\x12\x0e\n\x06weight\x18\x01 \x01(\x03\x12\x14\n\x0cplayers_freq\x18\x02 \x01(\t\x12\x12\n\nhyperlinks\x18\x03 \x01(\t2D\n\x05\x43rawl\x12;\n\x12process_hyperlinks\x12\x10.routeguide.Data\x1a\x13.routeguide.MessageB6\n\x1bio.grpc.examples.routeguideB\x0fRouteGuideProtoP\x01\xa2\x02\x03RTGb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'scrape_pb2', globals())
@@ -23,14 +23,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._serialized_options = b'\n\033io.grpc.examples.routeguideB\017RouteGuideProtoP\001\242\002\003RTG'
   _MESSAGE._serialized_start=28
   _MESSAGE._serialized_end=54
-  _PAIR._serialized_start=56
-  _PAIR._serialized_end=90
-  _DICTIONARY._serialized_start=92
-  _DICTIONARY._serialized_end=137
-  _LIST._serialized_start=139
-  _LIST._serialized_end=159
-  _DATA._serialized_start=161
-  _DATA._serialized_end=267
-  _CRAWL._serialized_start=269
-  _CRAWL._serialized_end=337
+  _DATA._serialized_start=56
+  _DATA._serialized_end=120
+  _CRAWL._serialized_start=122
+  _CRAWL._serialized_end=190
 # @@protoc_insertion_point(module_scope)
