@@ -20,3 +20,9 @@ PAIRDELIM = "we_really_love_cs262"
 
 # variable for our list delimiter
 LISTDELIM = "we_will_miss_cs262"
+
+# threshold for sites to add to queue
+URL_WEIGHT_THRESHOLD = 15
+
+# list of bad url paths
+BAD_URL_PATHS = ["apps", "./"]

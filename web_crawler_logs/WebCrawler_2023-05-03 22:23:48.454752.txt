@@ -1,9 +1,0 @@
-2023-05-03:22:23:48,455, Starting web crawler server...
-2023-05-03:22:23:51,440, Crawling next site: (-100, 'https://www.wtatennis.com/')
-2023-05-03:22:23:51,440, Exception calling application: (-100, 'https://www.wtatennis.com/') has type tuple, but expected one of: bytes, unicode
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.8/site-packages/grpc/_server.py", line 444, in _call_behavior
-    response_or_iterator = behavior(argument, context)
-  File "server_crawler.py", line 147, in process_hyperlinks
-    return scrape.Message(message = next_url)
-TypeError: (-100, 'https://www.wtatennis.com/') has type tuple, but expected one of: bytes, unicode

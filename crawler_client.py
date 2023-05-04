@@ -39,6 +39,8 @@ class CrawlerClient:
         self.player_list = np.reshape(data, -1)
 
     def get_hyperlinks(self, url, html):
+        # print("gethyp", url)
+        # print("HTMLLLL", html)
         list_of_hyperlinks = []
         soup = BeautifulSoup(html, 'html.parser')
         for link in soup.find_all('a'):
@@ -47,11 +49,12 @@ class CrawlerClient:
             if path and path.startswith('/'):
                 # print("filtered path", path)
                 path = urljoin(url, path)
-            if path is not None and not path.startswith('#'):
+            if path and not path.startswith('#') and not path.startswith("./") and path not in BAD_URL_PATHS:
                 list_of_hyperlinks.append(path)
         return list_of_hyperlinks
 
     def get_player_info_and_date(self, html):
+        # print("getplaya", html)
         soup = BeautifulSoup(html, 'html.parser')
         html_text = soup.get_text().lower()
         # print('orig', html_text)
@@ -97,10 +100,11 @@ class CrawlerClient:
     def compute_url_weight(self, player_count, date):
         # the logic for computing the url weight
         if int(date) < 2018 or player_count == 0:
-            # if the URL is outdated, return 10000 so it is never
+            # if the URL is outdated, return threshold so it is never
             # added to the queue as this will be filtered later
-            return 10000
-        url_weight = -player_count + (2023 - date)
+            return URL_WEIGHT_THRESHOLD 
+        url_weight = - player_count + (2023 - date)
+        print("URL weight computation", player_count, date, url_weight)
         return url_weight
 
     def get_url_info(self, url):
@@ -110,18 +114,18 @@ class CrawlerClient:
     
     # function for converting our player dicitonary to a proto value
     def convert_dict_to_proto(self, dict):
-        output = PAIRDELIM
+        output = str(PAIRDELIM)
         for key, val in dict.items():
-            output += str(key) + KEYDELIM + str(val) + PAIRDELIM
+            output += str(key) + str(KEYDELIM)+ str(val) + str(PAIRDELIM)
 
         return output
     
         
     # function for converting our url list to a proto value
     def convert_list_to_proto(self, list):
-        output = LISTDELIM
+        output = str(LISTDELIM)
         for url in list:
-            output += str(url) + LISTDELIM
+            output += str(url) + str(LISTDELIM)
 
         return output
 
@@ -158,17 +162,19 @@ class CrawlerClient:
 
             next_html = self.get_url_info(next_url)
             player_count_on_site, player_count, max_year = self.get_player_info_and_date(
-                next_url)
+                next_html)
 
             weight = self.compute_url_weight(player_count, max_year)
 
             new_hyperlinks = self.get_hyperlinks(next_url, next_html)
 
+
+            print("CLIENT SIDE", player_count, max_year, weight, player_count_on_site)
             players_freq = self.convert_dict_to_proto(player_count_on_site)
             hyperlinks = self.convert_list_to_proto(new_hyperlinks)
 
             request = scrape.Data(
-                weight=weight, 
+                weight=int(weight), 
                 players_freq=players_freq, 
                 hyperlinks=hyperlinks)
             

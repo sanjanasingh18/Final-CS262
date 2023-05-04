@@ -84,7 +84,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             self.urls_queue.put((weight, url))
 
             # release mutex
-            self.player_popularity_lock.release()
+            self.urls_queue_lock.release()
 
         # release mutex
         self.visited_urls_lock.release()
@@ -102,10 +102,12 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # if this is not an intialization request on the client's
         # behalf, process the client data
         if scraped_url_weight != CLIENT_BYPASS:
-            print("Processing URL data from client...")
+            print("Processing URL data from client with weight", scraped_url_weight)
+
             player_frequencies_on_url = self.convert_proto_to_dict(request.players_freq)
             new_urls = self.convert_proto_to_list(request.hyperlinks)
-
+            print('Info from client', player_frequencies_on_url, new_urls)
+            
             # lock the player popularity mutex
             self.player_popularity_lock.acquire()
             # use the player frequency counts from the scraped URL to update our
@@ -118,7 +120,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
                 player_frequencies_on_url), len(new_urls))
 
             # check if the weight of the scraped URLs meets the threshold weight
-            if scraped_url_weight < 1000:
+            if scraped_url_weight < URL_WEIGHT_THRESHOLD:
                 # add the new hyperlinks to the PriorityQueue according to the weight
                 for url in new_urls:
                     self.add_url_to_prioqueue(scraped_url_weight, url)
@@ -184,7 +186,7 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             for pair in pairs:
                 if pair:
                     key, val = pair.split(KEYDELIM)
-                    output[key] = val
+                    output[key] = int(val)
 
         return output
     
