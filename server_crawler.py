@@ -127,6 +127,11 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
                 # release mutex
                 self.urls_queue_lock.release()
             
+            # track how many sites have been visited
+            self.visited_urls_lock.acquire()
+            print("After visiting " + len(self.visited_urls) + " sites, we have the following statistics:")
+            self.visited_urls_lock.release()
+
             # after processing this, print the player popularity stats
             self.find_most_popular_players()
 
