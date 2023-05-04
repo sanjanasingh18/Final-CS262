@@ -11,6 +11,8 @@ from concurrent import futures
 import requests
 from urllib.parse import urljoin
 import numpy as np
+import pickle
+import sys
 
 import threading
 import logging
@@ -52,6 +54,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # # initialize the count vector to be 0 for each player
         # for player in self.player_list:
         #     self.player_popularity[player] = 0
+
+
 
         # create a logger file name and use that file to log crawling activities
         self.logname = "web_crawler_logs/WebCrawler" + \
@@ -252,5 +256,6 @@ class ServerRunner:
 
 
 if __name__ == '__main__':
+    restore = sys.argv[1].lower() == "true"
     server = ServerRunner()
     server.run()
