@@ -11,3 +11,12 @@ CLIENT_BYPASS = 309514
 
 # constant variable for error getting URL from priority queue
 PRIORITY_QUEUE_EMPTY = "PRIORITY_QUEUE_EMPTY"
+
+# variable for our key delimiter
+KEYDELIM = "we_love_cs262"
+
+# variable for our pair delimiter
+PAIRDELIM = "we_really_love_cs262"
+
+# variable for our list delimiter
+LISTDELIM = "we_will_miss_cs262"

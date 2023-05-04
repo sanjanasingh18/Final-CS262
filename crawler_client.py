@@ -107,18 +107,35 @@ class CrawlerClient:
         # requests_text = requests.get(url).text
         # url_weight = self.compute_url_weight(requests_text)
         return requests.get(url).text
+    
+    # function for converting our player dicitonary to a proto value
+    def convert_dict_to_proto(self, dict):
+        output = PAIRDELIM
+        for key, val in dict.items():
+            output += str(key) + KEYDELIM + str(val) + PAIRDELIM
+
+        return output
+    
+        
+    # function for converting our url list to a proto value
+    def convert_list_to_proto(self, list):
+        output = LISTDELIM
+        for url in list:
+            output += str(url) + LISTDELIM
+
+        return output
 
     def run_client(self):
         # want to send to server that you have joined so you receive
         # a URL to scrape
         # populate request data object
-        players_freq_var = scrape.Dictionary()
+        # players_freq_var = scrape.Dictionary()
         # entry = scrape.Pair()
         # entry.key = "1"
         # entry.value = "one"
         # players_freq_var.extend(entry)
 
-        hyperlinks_var = scrape.List()
+        # hyperlinks_var = scrape.List()
         request = scrape.Data()
         request.weight = CLIENT_BYPASS
         # request.players_freq.CopyFrom(players_freq_var)
@@ -147,10 +164,13 @@ class CrawlerClient:
 
             new_hyperlinks = self.get_hyperlinks(next_url, next_html)
 
+            players_freq = self.convert_dict_to_proto(player_count_on_site)
+            hyperlinks = self.convert_list_to_proto(new_hyperlinks)
+
             request = scrape.Data(
                 weight=weight, 
-                players_freq=player_count_on_site, 
-                hyperlinks=new_hyperlinks)
+                players_freq=players_freq, 
+                hyperlinks=hyperlinks)
             
             next_url = self.connection.process_hyperlinks(request).message
 

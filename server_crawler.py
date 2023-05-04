@@ -103,8 +103,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         # behalf, process the client data
         if scraped_url_weight != CLIENT_BYPASS:
             print("Processing URL data from client...")
-            player_frequencies_on_url = request.players_freq
-            new_urls = request.hyperlinks
+            player_frequencies_on_url = self.convert_proto_to_dict(request.players_freq)
+            new_urls = self.convert_proto_to_list(request.hyperlinks)
 
             # lock the player popularity mutex
             self.player_popularity_lock.acquire()
@@ -175,7 +175,30 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
 
         # release the player popularity mutex
         self.player_popularity_lock.release()
+    
+    # function for converting our proto value to a player dicitonary
+    def convert_proto_to_dict(self, proto):
+        output = {}
+        pairs = proto.split(PAIRDELIM)
+        if pairs:
+            for pair in pairs:
+                if pair:
+                    key, val = pair.split(KEYDELIM)
+                    output[key] = val
 
+        return output
+    
+    # function for converting our proto value to a url list
+    def convert_proto_to_list(self, proto):
+        output = []
+        urls = proto.split(LISTDELIM)
+        if urls:
+            for url in urls:
+                if url:
+                    output.append(url)
+
+        return output
+    
 # create a class for starting our Crawler server instance
 class ServerRunner:
     # start an instance of a server
