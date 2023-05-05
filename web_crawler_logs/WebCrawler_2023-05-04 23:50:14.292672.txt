@@ -1,0 +1,143 @@
+2023-05-04:23:50:14,293, Restoring web crawler server...
+2023-05-04:23:50:18,688, Crawling next site: https://play.google.com/store/apps/details?id=com.google.android.apps.podcasts&utm_source=google_podcasts&utm_campaign=pw_promo&hl=en-US
+2023-05-04:23:50:19,158, Finished crawling a site with 0 distinct players mentioned and 40 hyperlinks.
+2023-05-04:23:50:19,159, Crawling next site: https://www.espn.com/
+2023-05-04:23:50:19,517, Finished crawling a site with 2 distinct players mentioned and 107 hyperlinks.
+2023-05-04:23:50:19,555, Crawling next site: http://espn.com/video/clip?id=37331217
+2023-05-04:23:50:19,782, Finished crawling a site with 0 distinct players mentioned and 56 hyperlinks.
+2023-05-04:23:50:19,783, Crawling next site: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-05-04:23:50:19,908, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:23:50:19,909, Crawling next site: http://www.espn.com/espn/apps/download?app=espn
+2023-05-04:23:50:20,154, Finished crawling a site with 0 distinct players mentioned and 21 hyperlinks.
+2023-05-04:23:50:20,156, Crawling next site: http://www.espn.com/espn/mobile/products/products/_/id/17145860
+2023-05-04:23:50:20,470, Finished crawling a site with 0 distinct players mentioned and 7 hyperlinks.
+2023-05-04:23:50:20,470, Crawling next site: http://www.espn.com/espn/story/_/id/27852002/the-espn-daily-podcast-how-watch-episode-guide-more
+2023-05-04:23:50:21,234, Finished crawling a site with 7 distinct players mentioned and 1037 hyperlinks.
+2023-05-04:23:50:21,583, Crawling next site: http://espn.com/espnradio/play?id=28638866
+2023-05-04:23:50:22,000, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:50:22,000, Crawling next site: http://espn.com/espnradio/play?id=28770027
+2023-05-04:23:50:22,352, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:50:22,352, Crawling next site: http://espn.com/espnradio/play?id=29807383
+2023-05-04:23:50:22,724, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:50:22,725, Crawling next site: http://facebook.com/dialog/send?link=https://www.espn.com/espn/story/_/id/27852002&next=https://www.espn.com/espn/story/_/id/27852002&app_id=116656161708917
+2023-05-04:23:50:23,060, Finished crawling a site with 0 distinct players mentioned and 46 hyperlinks.
+2023-05-04:23:50:23,061, Crawling next site: http://http://www.espn.com/espnradio/play?id=30295678
+2023-05-04:23:51:42,914, Crawling next site: http://m.espn.com/general/play?id=36278167&cast=27767948&wjb=
+2023-05-04:23:51:43,439, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:51:43,439, Crawling next site: http://m.espn.com/general/play?id=36286379&cast=27767948&wjb=
+2023-05-04:23:51:43,870, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:51:43,870, Crawling next site: http://m.espn.com/general/play?id=36294143&cast=27767948&wjb=
+2023-05-04:23:51:44,237, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:51:44,238, Crawling next site: http://m.espn.com/general/play?id=36301657&cast=27767948&wjb=
+2023-05-04:23:51:44,785, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:51:44,786, Crawling next site: http://m.espn.com/general/play?id=36310379&cast=27767948&wjb=
+2023-05-04:23:51:45,126, Finished crawling a site with 0 distinct players mentioned and 22 hyperlinks.
+2023-05-04:23:51:45,126, Crawling next site: http://preview.espn.com/espnradio/play?id=28288868
+2023-05-04:23:51:45,301, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:23:51:45,302, Crawling next site: http://preview.espn.com/espnradio/play?id=28499981
+2023-05-04:23:51:45,456, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:23:51:45,457, Crawling next site: http://preview.espn.com/espnradio/play?id=28651739
+2023-05-04:23:51:45,640, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:23:51:45,640, Crawling next site: http://preview.espn.com/espnradio/play?id=28741767
+2023-05-04:23:51:45,801, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:23:51:45,801, Crawling next site: http://preview.espn.com/espnradio/play?id=29092002
+2023-05-04:23:51:45,952, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-04:23:51:45,953, Crawling next site: http://twitter.com/intent/tweet?lang=en&url=https%3A%2F%2Fwww.espn.com%2Fespn%2Fstory%2F_%2Fid%2F27852002&text=The%20ESPN%20Daily%20podcast%3A%20How%20to%20listen,%20episode%20guide%20and%20more
+2023-05-04:23:51:46,642, Finished crawling a site with 0 distinct players mentioned and 6 hyperlinks.
+2023-05-04:23:51:46,642, Crawling next site: http://www.espn.com/
+2023-05-04:23:51:47,012, Finished crawling a site with 2 distinct players mentioned and 108 hyperlinks.
+2023-05-04:23:51:47,049, Crawling next site: http://www.espn.com/blog/philadelphia-eagles/post/_/id/33590/eagles-nfl-draft-2023-can-philly-make-another-super-bowl-run
+2023-05-04:23:51:47,299, Finished crawling a site with 0 distinct players mentioned and 174 hyperlinks.
+2023-05-04:23:51:47,299, Crawling next site: http://www.espn.com/boxing/
+2023-05-04:23:51:47,699, Finished crawling a site with 1 distinct players mentioned and 94 hyperlinks.
+2023-05-04:23:51:47,730, Crawling next site: http://www.espn.com/boxing/story/_/id/37313396/canelo-alvarez-homecoming-boxing-biggest-star-returns-mexico-horses-moment-11-years-making
+2023-05-04:23:51:47,999, Finished crawling a site with 3 distinct players mentioned and 80 hyperlinks.
+2023-05-04:23:51:48,023, Crawling next site: http://www.espn.com/chalk/
+2023-05-04:23:51:48,275, Finished crawling a site with 1 distinct players mentioned and 88 hyperlinks.
+2023-05-04:23:51:48,302, Crawling next site: http://www.espn.com/chalk/story/_/id/37329867/mlb-betting-odds-award-predictions-world-series-2023
+2023-05-04:23:51:48,642, Finished crawling a site with 3 distinct players mentioned and 208 hyperlinks.
+2023-05-04:23:51:48,718, Crawling next site: http://www.espn.com/college-baseball/story/_/id/37409279/alabama-fires-baseball-coach-brad-bohannon-amid-betting-probe
+2023-05-04:23:51:48,976, Finished crawling a site with 0 distinct players mentioned and 94 hyperlinks.
+2023-05-04:23:51:48,977, Crawling next site: http://www.espn.com/college-football/
+2023-05-04:23:51:49,361, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-04:23:51:49,362, Crawling next site: http://www.espn.com/college-football/story/_/id/36313407/updated-spring-2023-college-football-top-25-power-rankings
+2023-05-04:23:51:50,069, Finished crawling a site with 0 distinct players mentioned and 295 hyperlinks.
+2023-05-04:23:51:50,070, Crawling next site: http://www.espn.com/college-football/story/_/id/37428423/colorado-ad-rick-george-backs-deion-sanders-amid-roster-turnover
+2023-05-04:23:51:50,298, Finished crawling a site with 0 distinct players mentioned and 98 hyperlinks.
+2023-05-04:23:51:50,299, Crawling next site: http://www.espn.com/college-football/team/_/id/30/usc-trojans
+2023-05-04:23:51:50,879, Finished crawling a site with 0 distinct players mentioned and 83 hyperlinks.
+2023-05-04:23:51:50,880, Crawling next site: http://www.espn.com/college-football/team/_/id/333/alabama-crimson-tide
+2023-05-04:23:51:51,406, Finished crawling a site with 0 distinct players mentioned and 82 hyperlinks.
+2023-05-04:23:51:51,407, Crawling next site: http://www.espn.com/college-football/team/_/id/38/colorado-buffaloes
+2023-05-04:23:51:51,886, Finished crawling a site with 0 distinct players mentioned and 84 hyperlinks.
+2023-05-04:23:51:51,887, Crawling next site: http://www.espn.com/college-sports/
+2023-05-04:23:51:52,360, Finished crawling a site with 0 distinct players mentioned and 88 hyperlinks.
+2023-05-04:23:51:52,361, Crawling next site: http://www.espn.com/college-sports/basketball/recruiting/
+2023-05-04:23:51:52,681, Finished crawling a site with 0 distinct players mentioned and 81 hyperlinks.
+2023-05-04:23:51:52,682, Crawling next site: http://www.espn.com/college-sports/football/recruiting/
+2023-05-04:23:51:53,112, Finished crawling a site with 0 distinct players mentioned and 110 hyperlinks.
+2023-05-04:23:51:53,114, Crawling next site: http://www.espn.com/espn/story/_/id/27852002/the-espn-daily-podcast-how-listen-episode-guide-more
+2023-05-04:23:51:57,881, Finished crawling a site with 7 distinct players mentioned and 1037 hyperlinks.
+2023-05-04:23:51:58,317, Crawling next site: http://www.espn.com/f1/
+2023-05-04:23:51:58,567, Finished crawling a site with 0 distinct players mentioned and 69 hyperlinks.
+2023-05-04:23:51:58,568, Crawling next site: http://www.espn.com/f1/story/_/id/37397276/inspired-lebron-tom-brady-lewis-hamilton-sees-no-end-f1-career
+2023-05-04:23:51:58,765, Finished crawling a site with 1 distinct players mentioned and 85 hyperlinks.
+2023-05-04:23:51:58,793, Crawling next site: http://www.espn.com/fantasy/
+2023-05-04:23:51:59,063, Finished crawling a site with 0 distinct players mentioned and 86 hyperlinks.
+2023-05-04:23:51:59,064, Crawling next site: http://www.espn.com/fantasy/football/story/_/id/36304365/fantasy-football-rankings-2023-ppr-non-ppr
+2023-05-04:23:51:59,377, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-04:23:51:59,378, Crawling next site: http://www.espn.com/fantasy/football/story/_/id/36580489/fantasy-football-mock-draft-10-team-ppr-bijan-robinson
+2023-05-04:23:51:59,751, Finished crawling a site with 1 distinct players mentioned and 255 hyperlinks.
+2023-05-04:23:51:59,835, Crawling next site: http://www.espn.com/fantasy/womens-basketball/story/_/id/37322660/fantasy-wnba-2023-6-team-mock-draft
+2023-05-04:23:52:00,099, Finished crawling a site with 0 distinct players mentioned and 172 hyperlinks.
+2023-05-04:23:52:00,100, Crawling next site: http://www.espn.com/fantasy/womens-basketball/story/_/id/37329073/fantasy-women-basketball-phoenix-mercury-wnba-2023-brittney-griner-skylar-diggins-smith
+2023-05-04:23:52:00,444, Finished crawling a site with 0 distinct players mentioned and 88 hyperlinks.
+2023-05-04:23:52:00,444, Crawling next site: http://www.espn.com/golf/
+2023-05-04:23:52:00,809, Finished crawling a site with 1 distinct players mentioned and 92 hyperlinks.
+2023-05-04:23:52:00,834, Crawling next site: http://www.espn.com/horse-racing/
+2023-05-04:23:52:01,202, Finished crawling a site with 1 distinct players mentioned and 87 hyperlinks.
+2023-05-04:23:52:01,230, Crawling next site: http://www.espn.com/horse-racing/story/_/id/37423824/churchill-downs-suspends-trainer-lord-miles-derby
+2023-05-04:23:52:01,423, Finished crawling a site with 2 distinct players mentioned and 76 hyperlinks.
+2023-05-04:23:52:01,447, Crawling next site: http://www.espn.com/mens-college-basketball/
+2023-05-04:23:52:01,735, Finished crawling a site with 0 distinct players mentioned and 93 hyperlinks.
+2023-05-04:23:52:01,736, Crawling next site: http://www.espn.com/mens-college-basketball/story/_/id/37412226/the-ripple-effect-hunter-dickinson-transfer-kansas-2023-24
+2023-05-04:23:52:01,931, Finished crawling a site with 0 distinct players mentioned and 102 hyperlinks.
+2023-05-04:23:52:01,932, Crawling next site: http://www.espn.com/mens-college-basketball/team/_/id/2305/kansas-jayhawks
+2023-05-04:23:52:02,325, Finished crawling a site with 0 distinct players mentioned and 92 hyperlinks.
+2023-05-04:23:52:02,326, Crawling next site: http://www.espn.com/mlb/
+2023-05-04:23:52:02,626, Finished crawling a site with 0 distinct players mentioned and 109 hyperlinks.
+2023-05-04:23:52:02,626, Crawling next site: http://www.espn.com/mlb/story/_/id/36435474/mlb-power-rankings-week-5-2023-yankees-fall-rays-dominate
+2023-05-04:23:52:02,876, Finished crawling a site with 2 distinct players mentioned and 191 hyperlinks.
+2023-05-04:23:52:02,931, Crawling next site: http://www.espn.com/mlb/story/_/id/37330711/how-baltimore-orioles-became-contender
+2023-05-04:23:52:03,117, Finished crawling a site with 0 distinct players mentioned and 111 hyperlinks.
+2023-05-04:23:52:03,117, Crawling next site: http://www.espn.com/mlb/story/_/id/37427559/rays-zach-eflin-asked-umps-remove-wedding-ring-start
+2023-05-04:23:52:03,322, Finished crawling a site with 1 distinct players mentioned and 87 hyperlinks.
+2023-05-04:23:52:03,349, Crawling next site: http://www.espn.com/mlb/team/_/name/ari/arizona-diamondbacks
+2023-05-04:23:52:03,624, Finished crawling a site with 0 distinct players mentioned and 78 hyperlinks.
+2023-05-04:23:52:03,625, Crawling next site: http://www.espn.com/mlb/team/_/name/bal/baltimore-orioles
+2023-05-04:23:52:03,925, Finished crawling a site with 0 distinct players mentioned and 78 hyperlinks.
+2023-05-04:23:52:03,926, Crawling next site: http://www.espn.com/mlb/team/_/name/tb/tampa-bay-rays
+2023-05-04:23:52:04,197, Finished crawling a site with 0 distinct players mentioned and 78 hyperlinks.
+2023-05-04:23:52:04,198, Crawling next site: http://www.espn.com/mma/
+2023-05-04:23:52:04,524, Finished crawling a site with 0 distinct players mentioned and 92 hyperlinks.
+2023-05-04:23:52:04,525, Crawling next site: http://www.espn.com/nba-g-league/
+2023-05-04:23:52:04,983, Finished crawling a site with 0 distinct players mentioned and 64 hyperlinks.
+2023-05-04:23:52:04,983, Crawling next site: http://www.espn.com/nba/
+2023-05-04:23:52:05,317, Finished crawling a site with 1 distinct players mentioned and 122 hyperlinks.
+2023-05-04:23:52:05,354, Crawling next site: http://www.espn.com/nba/story/_/id/37424110/sources-bucks-fire-coach-mike-budenholzer-early-exit
+2023-05-04:23:52:05,563, Finished crawling a site with 0 distinct players mentioned and 104 hyperlinks.
+2023-05-04:23:52:05,564, Crawling next site: http://www.espn.com/nba/team/_/name/mil/milwaukee-bucks
+2023-05-04:23:52:05,842, Finished crawling a site with 0 distinct players mentioned and 69 hyperlinks.
+2023-05-04:23:52:05,842, Crawling next site: http://www.espn.com/nfl/
+2023-05-04:23:52:06,228, Finished crawling a site with 0 distinct players mentioned and 124 hyperlinks.
+2023-05-04:23:52:06,228, Crawling next site: http://www.espn.com/nfl/draft2024/story/_/id/36950368/2024-nfl-draft-early-questions-qbs-know-top-prospects-sleepers
+2023-05-04:23:52:06,460, Finished crawling a site with 0 distinct players mentioned and 170 hyperlinks.
+2023-05-04:23:52:06,460, Crawling next site: http://www.espn.com/nfl/story/_/id/37329915/houston-texans-nfl-draft-trade-cj-stroud-anderson-jr
+2023-05-04:23:52:06,708, Finished crawling a site with 1 distinct players mentioned and 121 hyperlinks.
+2023-05-04:23:52:06,743, Crawling next site: http://www.espn.com/nfl/story/_/id/37414506/lamar-jackson-ravens-new-wrs-want-throw-6k-yards
+2023-05-04:23:52:06,985, Finished crawling a site with 0 distinct players mentioned and 107 hyperlinks.
+2023-05-04:23:52:06,985, Crawling next site: http://www.espn.com/nfl/story/_/id/37421059/giants-give-dt-dexter-lawrence-90-million-4-year-extension
+2023-05-04:23:52:07,225, Finished crawling a site with 0 distinct players mentioned and 109 hyperlinks.
+2023-05-04:23:52:07,226, Crawling next site: http://www.espn.com/nfl/team/_/name/bal/baltimore-ravens
+2023-05-04:23:52:07,530, Finished crawling a site with 0 distinct players mentioned and 71 hyperlinks.
+2023-05-04:23:52:07,531, Crawling next site: http://www.espn.com/nfl/team/_/name/hou/houston-texans

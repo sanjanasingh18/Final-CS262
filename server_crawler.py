@@ -91,19 +91,20 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
                     restored_tuple = pickle.load(handle)
                     # restored_tuple = pickle.load(open(self.restore_path, "rb"))
                     self.visited_urls = restored_tuple[0]
-                    # Make this a dictionary TODO so that the urls queues can be persistent 
-                    # TODO save priorityqueue and be able to read it
+                    self.visited_urls.pop()
+                    # print('visited1', self.visited_urls)
+                    last_url = self.visited_urls.pop()
                     self.urls_queue = PriorityQueue()
-                    # add the seed URL to our priority queue
-                    self.urls_queue.put((-100, 'https://www.espn.com/'))
-                    # self.urls_queue = self.toPriorityQueue(restored_tuple[1])
+                    self.urls_queue.put((-100, str(last_url)))
+                    self.urls_queue.put((-100, 'https://www.espn.com/tennis/'))
                     self.player_popularity = restored_tuple[1]
 
-                    print("RESTORED THIS:", restored_tuple, type(self.visited_urls), type(self.urls_queue), type(self.player_popularity))
+                    print("Restored this":, restored_tuple)
+                    # print('visited_urls2', self.visited_urls)
 
                     # create a variable to store the total number of sites we have crawled
                     self.number_of_sites_crawled = len(self.visited_urls)
-                    print("number NUMBER", self.number_of_sites_crawled)
+                    print("Number of sites crawled:", self.number_of_sites_crawled)
 
                     # log the server restoration 
                     self.log.info('Restoring web crawler server...')
@@ -116,33 +117,52 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
             self.setUpFromScratch()
     
     def toPriorityQueue(self, dict):
-        print("hiswag")
+        new_pqueue = PriorityQueue()
+        # get each item off the queue
+        for weight, url in dict.items():
+            new_pqueue.put((int(weight), url))
+        return new_pqueue
+    
+    def toDict(self, pqueue):
+
+        new_dict = {}
+        # get each item off the queue
+
+        while not pqueue.empty():
+            
+            url, weight = pqueue.get()
+            print('url, weight', url, weight)
+            new_dict[weight] = url
+            # new_list.append(url, weight)
+        
+        print("New dict", new_dict)
+        return new_dict
 
     # function to create persistent storage
     def save_to_pickle(self):
-        return "hi"
-        # # lock all the mutexes
-        # self.visited_urls_lock.acquire()
-        # self.urls_queue_lock.acquire()
-        # self.player_popularity_lock.acquire()
+        # lock all the mutexes
+        self.visited_urls_lock.acquire()
+        self.urls_queue_lock.acquire()
+        self.player_popularity_lock.acquire()
 
-        # if self.visited_urls and self.urls_queue and self.player_popularity:
-        #     # update the restore_tuple object so we can save it to our pickle file
-        #     # restore_tuple = (self.visited_urls, self.urls_queue, self.player_popularity)
-        #     restore_tuple = (self.visited_urls, self.player_popularity)
+        if self.visited_urls and self.urls_queue and self.player_popularity:
+            # update the restore_tuple object so we can save it to our pickle file
+            # restore_tuple = (self.visited_urls, self.urls_queue, self.player_popularity)
+            restore_tuple = (self.visited_urls, self.player_popularity)
 
-        #     print("Saving this tuple: ", restore_tuple)
-        #     # Store data (serialize)
-        #     with open(self.restore_path, 'wb') as handle:
-        #         pickle.dump(restore_tuple, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            #print("Saving this tuple: ", restore_tuple)
+            # Store data (serialize)
+            with open(self.restore_path, 'wb') as handle:
+                pickle.dump(restore_tuple, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
         # time.sleep(0.1)
-        # # # save the object to our pickle file
-        # # pickle.dump(restore_tuple, open(self.restore_path, "wb"))
+        # # save the object to our pickle file
+        # pickle.dump(restore_tuple, open(self.restore_path, "wb"))
 
-        # # release the mutexes
-        # self.visited_urls_lock.release()
-        # self.urls_queue_lock.release()
-        # self.player_popularity_lock.release()
+        # release the mutexes
+        self.visited_urls_lock.release()
+        self.urls_queue_lock.release()
+        self.player_popularity_lock.release()
 
 
     def add_url_to_prioqueue(self, weight, url):

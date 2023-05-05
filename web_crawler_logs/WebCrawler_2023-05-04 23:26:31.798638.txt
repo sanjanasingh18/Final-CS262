@@ -1,0 +1,3 @@
+2023-05-04:23:26:31,799, Starting new web crawler server...
+2023-05-04:23:26:44,127, Crawling next site: https://www.wtatennis.com/
+2023-05-04:23:26:44,641, Finished crawling a site with 15 distinct players mentioned and 105 hyperlinks.

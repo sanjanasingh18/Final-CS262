@@ -1,0 +1,9 @@
+2023-05-04:23:16:49,103, Restoring web crawler server...
+2023-05-04:23:17:01,508, Crawling next site: -15
+2023-05-04:23:17:01,508, Exception calling application: -15 has type int, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/grpc/_server.py", line 444, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server_crawler.py", line 275, in process_hyperlinks
+    return scrape.Message(message=next_url)
+TypeError: -15 has type int, but expected one of: bytes, unicode

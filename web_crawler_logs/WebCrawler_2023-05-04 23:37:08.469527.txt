@@ -1,0 +1,9 @@
+2023-05-04:23:37:08,470, Restoring web crawler server...
+2023-05-04:23:37:13,800, Crawling next site: ['https://www.wtatennis.com/', [...]]
+2023-05-04:23:37:13,800, Exception calling application: ['https://www.wtatennis.com/', [...]] has type list, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/grpc/_server.py", line 444, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "server_crawler.py", line 279, in process_hyperlinks
+    return scrape.Message(message=next_url)
+TypeError: ['https://www.wtatennis.com/', [...]] has type list, but expected one of: bytes, unicode
