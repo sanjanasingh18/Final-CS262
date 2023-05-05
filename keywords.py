@@ -1,4 +1,4 @@
-# Set our PORT variable
+# set our PORT variable
 PORT = 8889
 
 # change the HOST variable according to the hostname of your computer
@@ -26,3 +26,6 @@ URL_WEIGHT_THRESHOLD = 15
 
 # list of bad url paths
 BAD_URL_PATHS = ["apps", "./"]
+
+# variable for a restore URL value
+RESTORE_URL = "https://www.espn.com/tennis/dailyResults"

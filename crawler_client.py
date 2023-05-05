@@ -47,7 +47,7 @@ class CrawlerClient:
             if path and path.startswith('/'):
                 # print("filtered path", path)
                 path = urljoin(url, path)
-            if path and not path.startswith('#') and not path.startswith("./") and path not in BAD_URL_PATHS:
+            if path and not path.startswith('#') and not path.startswith("./") and not path.startswith("?date=") and path not in BAD_URL_PATHS:
                 list_of_hyperlinks.append(path)
         return list_of_hyperlinks
 

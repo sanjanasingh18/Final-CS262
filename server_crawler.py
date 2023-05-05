@@ -96,10 +96,12 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
                     last_url = self.visited_urls.pop()
                     self.urls_queue = PriorityQueue()
                     self.urls_queue.put((-100, str(last_url)))
-                    self.urls_queue.put((-100, 'https://www.espn.com/tennis/'))
+                    if RESTORE_URL in self.visited_urls:
+                        self.visited_urls.remove(RESTORE_URL)
+                    self.urls_queue.put((-100, RESTORE_URL))
                     self.player_popularity = restored_tuple[1]
 
-                    print("Restored this":, restored_tuple)
+                    print("Restored this:", restored_tuple)
                     # print('visited_urls2', self.visited_urls)
 
                     # create a variable to store the total number of sites we have crawled
