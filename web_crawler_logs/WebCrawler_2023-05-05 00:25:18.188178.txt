@@ -1,0 +1,28 @@
+2023-05-05:00:25:18,189, Starting new web crawler server...
+2023-05-05:00:25:20,489, Crawling next site: https://www.wtatennis.com/
+2023-05-05:00:25:21,091, Finished crawling a site with 15 distinct players mentioned and 105 hyperlinks.
+2023-05-05:00:25:21,122, Crawling next site: http://instagram.com/wta
+2023-05-05:00:25:22,226, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-05:00:25:22,227, Crawling next site: http://tennisplaysforpeace.com/
+2023-05-05:00:25:23,326, Finished crawling a site with 0 distinct players mentioned and 1 hyperlinks.
+2023-05-05:00:25:23,327, Crawling next site: http://www.usopenseries.com/home/default.sps
+2023-05-05:00:25:23,969, Finished crawling a site with 3 distinct players mentioned and 29 hyperlinks.
+2023-05-05:00:25:23,981, Crawling next site: http://www.youtube.com/user/wta
+2023-05-05:00:25:24,501, Finished crawling a site with 0 distinct players mentioned and 14 hyperlinks.
+2023-05-05:00:25:24,501, Crawling next site: https://join.whoop.com/WTA/=_blank
+2023-05-05:00:25:24,873, Finished crawling a site with 0 distinct players mentioned and 1 hyperlinks.
+2023-05-05:00:25:24,874, Crawling next site: https://open.spotify.com/show/7mO3pU6mfindpNSy5i2dlY
+2023-05-05:00:25:25,434, Finished crawling a site with 10 distinct players mentioned and 10 hyperlinks.
+2023-05-05:00:25:25,439, Crawling next site: https://podcasts.apple.com/us/podcast/wta-insider-podcast/id1052842829
+2023-05-05:00:25:26,855, Finished crawling a site with 6 distinct players mentioned and 42 hyperlinks.
+2023-05-05:00:25:26,872, Crawling next site: https://podcasts.google.com/feed/aHR0cDovL3d0YWluc2lkZXIubGlic3luLmNvbS9yc3M?sa=X&ved=0CAMQ4aUDahcKEwig5cqts__1AhUAAAAAHQAAAAAQAQ
+2023-05-05:00:25:27,403, Finished crawling a site with 28 distinct players mentioned and 10 hyperlinks.
+2023-05-05:00:25:27,409, Crawling next site: http://www.wtatennis.com/
+2023-05-05:00:25:27,727, Finished crawling a site with 15 distinct players mentioned and 109 hyperlinks.
+2023-05-05:00:25:27,777, Crawling next site: https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://podcasts.google.com/feed/aHR0cDovL3d0YWluc2lkZXIubGlic3luLmNvbS9yc3M?sa%3DX%26ved%3D0CAMQ4aUDahcKEwig5cqts__1AhUAAAAAHQAAAAAQAQ&followup=https://podcasts.google.com/feed/aHR0cDovL3d0YWluc2lkZXIubGlic3luLmNvbS9yc3M?sa%3DX%26ved%3D0CAMQ4aUDahcKEwig5cqts__1AhUAAAAAHQAAAAAQAQ&ec=GAZA2wM
+2023-05-05:00:25:28,065, Finished crawling a site with 0 distinct players mentioned and 6 hyperlinks.
+2023-05-05:00:25:28,066, Crawling next site: https://apps.apple.com/app/apple-store/id1398000105?pt=9008&ct=SideMenuLink&mt=8
+2023-05-05:00:25:28,689, Finished crawling a site with 0 distinct players mentioned and 42 hyperlinks.
+2023-05-05:00:25:28,690, Crawling next site: https://myaccount.google.com/privacypolicy?hl=en-US
+2023-05-05:00:25:29,170, Finished crawling a site with 1 distinct players mentioned and 179 hyperlinks.
+2023-05-05:00:25:29,232, Crawling next site: https://myaccount.google.com/termsofservice?hl=en-US

@@ -1,0 +1,111 @@
+2023-05-05:00:31:29,417, Restoring web crawler server...
+2023-05-05:00:31:34,660, Crawling next site: https://support.google.com/podcast-publishers/answer/9476656?hl=en-US
+2023-05-05:00:31:35,151, Finished crawling a site with 0 distinct players mentioned and 30 hyperlinks.
+2023-05-05:00:31:35,153, Crawling next site: https://www.espn.com/tennis/dailyResults
+2023-05-05:00:31:35,407, Finished crawling a site with 8 distinct players mentioned and 99 hyperlinks.
+2023-05-05:00:31:35,451, Crawling next site: http://disneyprivacycenter.com/
+2023-05-05:00:31:36,966, Finished crawling a site with 1 distinct players mentioned and 34 hyperlinks.
+2023-05-05:00:31:36,966, Crawling next site: http://disneytermsofuse.com/
+2023-05-05:00:31:38,397, Finished crawling a site with 0 distinct players mentioned and 59 hyperlinks.
+2023-05-05:00:31:38,397, Crawling next site: http://espncareers.com
+2023-05-05:00:31:38,650, Finished crawling a site with 1 distinct players mentioned and 91 hyperlinks.
+2023-05-05:00:31:38,650, Crawling next site: http://espnmediazone.com/us/
+2023-05-05:00:31:39,553, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-05:00:31:39,553, Crawling next site: http://preferences-mgr.truste.com/?type=espn&affiliateId=148
+2023-05-05:00:31:39,679, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-05:00:31:39,680, Crawling next site: http://preferences.truste.com/2.0/?type=espn&affiliateId=148
+2023-05-05:00:31:39,904, Finished crawling a site with 0 distinct players mentioned and 0 hyperlinks.
+2023-05-05:00:31:39,905, Crawling next site: http://www.espn.com
+2023-05-05:00:31:40,023, Crawling next site: http://www.espn.com/boxing/
+2023-05-05:00:31:40,226, Finished crawling a site with 2 distinct players mentioned and 108 hyperlinks.
+2023-05-05:00:31:40,273, Crawling next site: http://www.espn.com/chalk/
+2023-05-05:00:31:40,294, Finished crawling a site with 1 distinct players mentioned and 94 hyperlinks.
+2023-05-05:00:31:40,337, Crawling next site: http://www.espn.com/college-football/
+2023-05-05:00:31:40,586, Finished crawling a site with 0 distinct players mentioned and 106 hyperlinks.
+2023-05-05:00:31:40,588, Crawling next site: http://www.espn.com/college-sports/
+2023-05-05:00:31:40,736, Finished crawling a site with 1 distinct players mentioned and 88 hyperlinks.
+2023-05-05:00:31:40,772, Crawling next site: http://www.espn.com/college-sports/basketball/recruiting/
+2023-05-05:00:31:40,880, Finished crawling a site with 0 distinct players mentioned and 88 hyperlinks.
+2023-05-05:00:31:40,880, Crawling next site: http://www.espn.com/college-sports/football/recruiting/
+2023-05-05:00:31:41,085, Finished crawling a site with 0 distinct players mentioned and 81 hyperlinks.
+2023-05-05:00:31:41,086, Crawling next site: http://www.espn.com/espn/corrections
+2023-05-05:00:31:41,177, Finished crawling a site with 0 distinct players mentioned and 110 hyperlinks.
+2023-05-05:00:31:41,177, Crawling next site: http://www.espn.com/espn/news/story?page=contact-index
+2023-05-05:00:31:41,180, Finished crawling a site with 1 distinct players mentioned and 79 hyperlinks.
+2023-05-05:00:31:41,212, Crawling next site: http://www.espn.com/espn/news/story?page=help
+2023-05-05:00:31:41,351, Finished crawling a site with 0 distinct players mentioned and 98 hyperlinks.
+2023-05-05:00:31:41,353, Crawling next site: http://www.espn.com/espn/sitemap
+2023-05-05:00:31:41,424, Finished crawling a site with 0 distinct players mentioned and 105 hyperlinks.
+2023-05-05:00:31:41,424, Crawling next site: http://www.espn.com/espnradio/index
+2023-05-05:00:31:41,542, Finished crawling a site with 0 distinct players mentioned and 162 hyperlinks.
+2023-05-05:00:31:41,543, Crawling next site: http://www.espn.com/f1/
+2023-05-05:00:31:41,744, Finished crawling a site with 1 distinct players mentioned and 65 hyperlinks.
+2023-05-05:00:31:41,745, Crawling next site: http://www.espn.com/fantasy/
+2023-05-05:00:31:41,761, Finished crawling a site with 0 distinct players mentioned and 69 hyperlinks.
+2023-05-05:00:31:41,761, Crawling next site: http://www.espn.com/golf/
+2023-05-05:00:31:41,911, Finished crawling a site with 0 distinct players mentioned and 86 hyperlinks.
+2023-05-05:00:31:41,912, Crawling next site: http://www.espn.com/horse-racing/
+2023-05-05:00:31:42,064, Finished crawling a site with 1 distinct players mentioned and 92 hyperlinks.
+2023-05-05:00:31:42,100, Crawling next site: http://www.espn.com/mens-college-basketball/
+2023-05-05:00:31:42,250, Finished crawling a site with 1 distinct players mentioned and 87 hyperlinks.
+2023-05-05:00:31:42,284, Crawling next site: http://www.espn.com/mlb/
+2023-05-05:00:31:42,388, Finished crawling a site with 0 distinct players mentioned and 93 hyperlinks.
+2023-05-05:00:31:42,390, Crawling next site: http://www.espn.com/mma/
+2023-05-05:00:31:42,660, Finished crawling a site with 0 distinct players mentioned and 109 hyperlinks.
+2023-05-05:00:31:42,662, Crawling next site: http://www.espn.com/nba-g-league/
+2023-05-05:00:31:42,818, Finished crawling a site with 0 distinct players mentioned and 92 hyperlinks.
+2023-05-05:00:31:42,819, Crawling next site: http://www.espn.com/nba/
+2023-05-05:00:31:42,901, Finished crawling a site with 0 distinct players mentioned and 64 hyperlinks.
+2023-05-05:00:31:42,903, Crawling next site: http://www.espn.com/nfl/
+2023-05-05:00:31:43,095, Finished crawling a site with 1 distinct players mentioned and 122 hyperlinks.
+2023-05-05:00:31:43,139, Crawling next site: http://www.espn.com/nhl/
+2023-05-05:00:31:43,239, Finished crawling a site with 0 distinct players mentioned and 123 hyperlinks.
+2023-05-05:00:31:43,239, Crawling next site: http://www.espn.com/olympics/
+2023-05-05:00:31:43,470, Finished crawling a site with 2 distinct players mentioned and 106 hyperlinks.
+2023-05-05:00:31:43,507, Crawling next site: http://www.espn.com/racing/
+2023-05-05:00:31:43,609, Finished crawling a site with 0 distinct players mentioned and 84 hyperlinks.
+2023-05-05:00:31:43,610, Crawling next site: http://www.espn.com/racing/nascar/
+2023-05-05:00:31:43,867, Finished crawling a site with 0 distinct players mentioned and 91 hyperlinks.
+2023-05-05:00:31:43,869, Crawling next site: http://www.espn.com/rugby/
+2023-05-05:00:31:43,968, Finished crawling a site with 0 distinct players mentioned and 79 hyperlinks.
+2023-05-05:00:31:43,970, Crawling next site: http://www.espn.com/soccer/
+2023-05-05:00:31:44,062, Finished crawling a site with 1 distinct players mentioned and 64 hyperlinks.
+2023-05-05:00:31:44,064, Crawling next site: http://www.espn.com/tennis/
+2023-05-05:00:31:44,200, Finished crawling a site with 0 distinct players mentioned and 107 hyperlinks.
+2023-05-05:00:31:44,200, Crawling next site: http://www.espn.com/tennis/dailyResults
+2023-05-05:00:31:44,276, Finished crawling a site with 3 distinct players mentioned and 86 hyperlinks.
+2023-05-05:00:31:44,277, Crawling next site: http://www.espn.com/tennis/history
+2023-05-05:00:31:44,395, Finished crawling a site with 8 distinct players mentioned and 99 hyperlinks.
+2023-05-05:00:31:44,424, Crawling next site: http://www.espn.com/tennis/player/_/id/10015/jodie-burrage
+2023-05-05:00:31:44,574, Finished crawling a site with 0 distinct players mentioned and 63 hyperlinks.
+2023-05-05:00:31:44,575, Crawling next site: http://www.espn.com/tennis/player/_/id/10676/leyre-romero-gormaz
+2023-05-05:00:31:44,684, Finished crawling a site with 0 distinct players mentioned and 103 hyperlinks.
+2023-05-05:00:31:44,685, Crawling next site: http://www.espn.com/tennis/player/_/id/1092/rohan-bopanna
+2023-05-05:00:31:44,756, Finished crawling a site with 0 distinct players mentioned and 63 hyperlinks.
+2023-05-05:00:31:44,758, Crawling next site: http://www.espn.com/tennis/player/_/id/1272/amandine-hesse
+2023-05-05:00:31:44,930, Finished crawling a site with 0 distinct players mentioned and 71 hyperlinks.
+2023-05-05:00:31:44,932, Crawling next site: http://www.espn.com/tennis/player/_/id/1343/marcelo-arevalo
+2023-05-05:00:31:44,970, Finished crawling a site with 0 distinct players mentioned and 63 hyperlinks.
+2023-05-05:00:31:44,970, Crawling next site: http://www.espn.com/tennis/player/_/id/1472/sloane-stephens
+2023-05-05:00:31:45,057, Finished crawling a site with 0 distinct players mentioned and 69 hyperlinks.
+2023-05-05:00:31:45,059, Crawling next site: http://www.espn.com/tennis/player/_/id/1517/matthew-ebden
+2023-05-05:00:31:45,161, Finished crawling a site with 1 distinct players mentioned and 65 hyperlinks.
+2023-05-05:00:31:45,174, Crawling next site: http://www.espn.com/tennis/player/_/id/1573/jean-julien-rojer
+2023-05-05:00:31:45,351, Finished crawling a site with 0 distinct players mentioned and 69 hyperlinks.
+2023-05-05:00:31:45,352, Crawling next site: http://www.espn.com/tennis/player/_/id/1774/sorana-cirstea
+2023-05-05:00:31:45,423, Finished crawling a site with 0 distinct players mentioned and 71 hyperlinks.
+2023-05-05:00:31:45,423, Crawling next site: http://www.espn.com/tennis/player/_/id/1929/lauren-davis
+2023-05-05:00:31:45,550, Finished crawling a site with 2 distinct players mentioned and 66 hyperlinks.
+2023-05-05:00:31:45,566, Crawling next site: http://www.espn.com/tennis/player/_/id/1989/aslan-karatsev
+2023-05-05:00:31:45,711, Finished crawling a site with 0 distinct players mentioned and 64 hyperlinks.
+2023-05-05:00:31:45,712, Crawling next site: http://www.espn.com/tennis/player/_/id/2027/viktoriya-tomova
+2023-05-05:00:31:45,809, Finished crawling a site with 1 distinct players mentioned and 70 hyperlinks.
+2023-05-05:00:31:45,826, Crawling next site: http://www.espn.com/tennis/player/_/id/2337/jan-lennard-struff
+2023-05-05:00:31:46,015, Finished crawling a site with 0 distinct players mentioned and 63 hyperlinks.
+2023-05-05:00:31:46,016, Crawling next site: http://www.espn.com/tennis/player/_/id/2341/anna-karolina-schmiedlova
+2023-05-05:00:31:46,077, Finished crawling a site with 1 distinct players mentioned and 70 hyperlinks.
+2023-05-05:00:31:46,097, Crawling next site: http://www.espn.com/tennis/player/_/id/2367/karen-khachanov
+2023-05-05:00:31:46,297, Finished crawling a site with 1 distinct players mentioned and 63 hyperlinks.
+2023-05-05:00:31:46,311, Crawling next site: http://www.espn.com/tennis/player/_/id/2385/freya-christie
+2023-05-05:00:31:46,421, Finished crawling a site with 0 distinct players mentioned and 77 hyperlinks.
+2023-05-05:00:31:46,421, Crawling next site: http://www.espn.com/tennis/player/_/id/2615/jasmine-paolini

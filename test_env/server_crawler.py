@@ -1,4 +1,3 @@
-
 import grpc
 from grpc._server import _Server
 import scrape_pb2 as scrape
@@ -47,6 +46,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
 
         # log the server initialization 
         self.log.info('Starting new web crawler server...')
+
+        return self.number_of_sites_crawled
 
     # initialize the server for our  distributed web crawler
     def __init__(self):
@@ -166,6 +167,8 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         self.urls_queue_lock.release()
         self.player_popularity_lock.release()
 
+        return True
+
 
     def add_url_to_prioqueue(self, weight, url):
         # logic will be that the weight for each child link will
@@ -275,8 +278,6 @@ class CrawlerServer(scrape_pb2_grpc.CrawlServicer):
         
         # release mutex
         self.urls_queue_lock.release()
-
-
 
         # return the next URL for the client to scrape
         return scrape.Message(message=next_url)

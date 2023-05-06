@@ -1,0 +1,8 @@
+2023-05-05:00:27:20,827, Restoring web crawler server...
+2023-05-05:00:27:25,645, Crawling next site: https://www.espn.com/tennis/dailyResults
+2023-05-05:00:27:26,127, Finished crawling a site with 8 distinct players mentioned and 106 hyperlinks.
+2023-05-05:00:27:26,157, Crawling next site: ?date=20230430
+2023-05-05:00:27:46,292, Crawling next site: ?date=20230501
+2023-05-05:00:28:04,795, Crawling next site: ?date=20230502
+2023-05-05:00:28:08,219, Crawling next site: ?date=20230503
+2023-05-05:00:28:11,637, Crawling next site: ?date=20230504
