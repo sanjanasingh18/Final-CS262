@@ -18,13 +18,11 @@ from bs4 import BeautifulSoup
 from crawler_client import CrawlerClient
 from server_crawler import CrawlerServer, ServerRunner
 
+
 class TestClientMethods(unittest.TestCase):
     def setUp(self):
         self.client_crawler = CrawlerClient()
         # self.client_crawler.run_client()
-
-    # def tearDown(self):
-    #     self.client_crawler.client.close()
 
     def test_get_url_info(self):
         # test the function that gets the HTML link from a URL that is used to parse a url
@@ -56,7 +54,8 @@ class TestClientMethods(unittest.TestCase):
         print("Testing the convert_list_to_proto function")
 
         # create a variable for the expected list
-        input_list = ["url1.com", "url2.com", "url3.com", "url4.com", "url5.com"]
+        input_list = ["url1.com", "url2.com",
+                      "url3.com", "url4.com", "url5.com"]
 
         # get the output list from the function
         output_proto = self.client_crawler.convert_list_to_proto(input_list)
@@ -74,7 +73,8 @@ class TestClientMethods(unittest.TestCase):
         test_url_date = 2023
 
         # get the weight from the client function
-        output_weight = self.client_crawler.compute_url_weight(test_player_count, test_url_date)
+        output_weight = self.client_crawler.compute_url_weight(
+            test_player_count, test_url_date)
 
         # check if the function returns the correct output
         self.assertEqual(TEST_URL_WEIGHT, output_weight)
@@ -88,7 +88,8 @@ class TestClientMethods(unittest.TestCase):
         test_url_date = 2023
 
         # get the weight with a site that has no player mentions
-        output_weight = self.client_crawler.compute_url_weight(test_player_count, test_url_date)
+        output_weight = self.client_crawler.compute_url_weight(
+            test_player_count, test_url_date)
 
         # check if the function returns the correct output
         self.assertEqual(URL_WEIGHT_THRESHOLD, output_weight)
@@ -102,7 +103,8 @@ class TestClientMethods(unittest.TestCase):
         test_url_date = 2015
 
         # get the weight with a site that has no player mentions
-        output_weight = self.client_crawler.compute_url_weight(test_player_count, test_url_date)
+        output_weight = self.client_crawler.compute_url_weight(
+            test_player_count, test_url_date)
 
         # check if the function returns the correct output
         self.assertEqual(URL_WEIGHT_THRESHOLD, output_weight)
@@ -115,10 +117,12 @@ class TestClientMethods(unittest.TestCase):
         test_html = self.client_crawler.get_url_info(TEST_URL)
 
         # call the function on the test HTML parse
-        output_player_count_on_site, output_player_count, output_year = self.client_crawler.get_player_info_and_date(test_html)
+        output_player_count_on_site, output_player_count, output_year = self.client_crawler.get_player_info_and_date(
+            test_html)
 
         # check if the function returns the correct output
-        self.assertEqual(TEST_PLAYER_COUNT_ON_SITE, bool(output_player_count_on_site))
+        self.assertEqual(TEST_PLAYER_COUNT_ON_SITE,
+                         bool(output_player_count_on_site))
         self.assertEqual(False, output_player_count == 0)
         self.assertEqual(True, output_year > 2022)
 
@@ -130,10 +134,12 @@ class TestClientMethods(unittest.TestCase):
         test_html = self.client_crawler.get_url_info(TEST_URL)
 
         # call the function on the test url and test html
-        output_hyperlinks = self.client_crawler.get_hyperlinks(TEST_URL, test_html)
+        output_hyperlinks = self.client_crawler.get_hyperlinks(
+            TEST_URL, test_html)
 
         # check if the function returns the correct output
         self.assertEqual(True, bool(output_hyperlinks))
+
 
 if __name__ == '__main__':
     # start the unit tests for the crawler client

@@ -154,7 +154,8 @@ class SimpleServerTestCase(unittest.TestCase):
         print("Testing the save_to_pickle function")
 
         # update test crawler server data structures to save to the pickle file
-        self.server_crawler.visisted_urls = ["url1.com", "url2.com", "url3.com", "url4.com", "url5.com"]
+        self.server_crawler.visisted_urls = [
+            "url1.com", "url2.com", "url3.com", "url4.com", "url5.com"]
 
         self.server_crawler.urls_queue = PriorityQueue()
         self.server_crawler.urls_queue.put((10, "url1"))
@@ -175,7 +176,8 @@ class SimpleServerTestCase(unittest.TestCase):
         expected_dict = {'url1': 10, 'url2': 8, 'url3': 6, 'url4': 4}
 
         # get the output list from the function
-        output_dict = self.server_crawler.convert_proto_to_dict(TEST_PROTO_DICT)
+        output_dict = self.server_crawler.convert_proto_to_dict(
+            TEST_PROTO_DICT)
 
         # check if the function returns the correct output
         self.assertEqual(expected_dict, output_dict)
@@ -185,13 +187,16 @@ class SimpleServerTestCase(unittest.TestCase):
         print("Testing the convert_proto_to_list function")
 
         # create a variable for the expected list
-        expected_list = ["url1.com", "url2.com", "url3.com", "url4.com", "url5.com"]
+        expected_list = ["url1.com", "url2.com",
+                         "url3.com", "url4.com", "url5.com"]
 
         # get the output list from the function
-        output_list = self.server_crawler.convert_proto_to_list(TEST_PROTO_LIST)
+        output_list = self.server_crawler.convert_proto_to_list(
+            TEST_PROTO_LIST)
 
         # check if the function returns the correct output
         self.assertEqual(expected_list, output_list)
+
 
 if __name__ == '__main__':
     # start the unit tests for the crawler server
